@@ -1,6 +1,6 @@
-# Nome do projeto
+# Sistema de RH
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+A aplicação web de sistema de RH possui como objetivo ajudar as pessoas a encontrarem diferentes tipos de vagas de emprego. Ademais, também ajudamos as empresas a divulgarem essas vagas.
 
 ## Alunos integrantes da equipe
 
