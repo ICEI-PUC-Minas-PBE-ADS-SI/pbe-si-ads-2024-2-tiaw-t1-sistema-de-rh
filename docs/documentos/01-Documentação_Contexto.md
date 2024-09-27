@@ -32,3 +32,22 @@ Fóruns de discussão, atualizações sobre a empresa e principalmente, platafor
 
 Como diz Geoffrey Moore: *"As tecnologias que mudam o jogo não são aquelas que apenas melhoram o que já existe; elas mudam as regras do jogo."*
 
+## Público-alvo
+Embora os desafios relacionados com a procura de emprego possam surgir em diferentes fases da vida, o foco deste trabalho está na população jovem com faixa etária entre 18 a 25 anos, cursando o ensino superior.
+
+Portanto, esta solução é direcionada a homens e mulheres que enfrentam barreiras na transição para o mercado de trabalho. Além da necessidade de maior autonomia nas escolhas profissionais, esses indivíduos devem se adaptar rapidamente às demandas do mercado, e essas mudanças podem impactar sua capacidade de se destacarem em suas aplicações.
+
+Para entender melhor o público-alvo, foi criado um formulário do Google Forms para coletar informações de candidatos a emprego, incluindo:
+- Trabalhadores em busca de novas oportunidades;
+- Aqueles que foram demitidos;
+- Profissionais mudando de carreira.
+
+Isso tornou possível identificar algumas características e ações que são comuns entre eles. São elas:
+
+1. Agitada gestão do tempo;
+2. Uso intenso de tecnologia para fins de busca de emprego;
+3. Busca por oportunidades melhores.
+
+Vale ressaltar que o projeto não se limita às pessoas mencionadas acima, mas também a empresas interessadas em serem mentoras e que desejam ajudar a orientar novos talentos para o mercado de trabalho.
+
+
