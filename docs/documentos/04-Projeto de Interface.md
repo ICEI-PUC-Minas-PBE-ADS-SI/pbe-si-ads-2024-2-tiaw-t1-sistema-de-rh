@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/141b3ead-1c4d-43da-b798-fccc7b06de52)## 3. Projeto de Interface
+## 3. Projeto de Interface
 
 O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
@@ -16,22 +16,22 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 
 ### Wireframes
 
-#### Home Page
+### Home Page
 ![image](https://github.com/user-attachments/assets/3fc0697f-15ec-4a07-b64e-350bfccfbc46)
 
-#### Tela de Login
+### Tela de Login
 ![image](https://github.com/user-attachments/assets/eda87fa8-60ae-4ded-8007-c628082e64cd)
 
-#### Tela de Cadastro de Usuário
+### Tela de Cadastro de Usuário
 ![image](https://github.com/user-attachments/assets/5c29f125-44cf-477f-bdb7-de95f5ae05cf)
 
 ### Perfil do usuário
 ![image](https://github.com/user-attachments/assets/af1bb956-04b2-4500-be43-53f74ab2473d)
 
-#### Filtragem de Vagas
+### Filtragem de Vagas
 ![image](https://github.com/user-attachments/assets/ca55d268-17e5-4b40-b3f3-6173ee779882)
 
-#### Vagas Disponíveis
+### Vagas Disponíveis
 ![image](https://github.com/user-attachments/assets/99674882-d538-495d-ae0a-4eeb76c987e9)
 
 Atenção: O design do site pode sofrer reformulações durante a etapa de desenvolvimento, tal reformulação sempre será atualizada nesse documento.
