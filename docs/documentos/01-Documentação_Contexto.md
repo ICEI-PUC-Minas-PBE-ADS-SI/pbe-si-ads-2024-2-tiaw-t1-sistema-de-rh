@@ -1,4 +1,6 @@
-# Introdução
+# 01. Documentação do Contexto
+
+## Introdução
 Entrar no mercado de trabalho ou encontrar novas oportunidades profissionais é um grande desafio, independente da década em que esteja. Segundo Lima e Rodrigues (2018, p. 107), a competitividade no local de trabalho com regularidade e mudanças contínuas obriga os profissionais a se adaptarem continuamente às novidades das ofertas.
 
 Algumas das dificuldades mais comuns são as seguintes: falta de recursos e orientação adequada para encontrar vagas que apliquem as habilidades e objetivos dos candidatos. Muitas vezes, para aqueles que acabaram de começar a carreira, além de qualquer profissional em transição ou alguém que procura um novo emprego, as expectativas do mercado sobre as oportunidades que os colocarão em um emprego são de fato um grande desafio.
