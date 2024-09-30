@@ -168,6 +168,7 @@ Matheus não aceita sistemas que o façam perder tempo ou que não ofereçam as 
 
 O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
+![Texto alternativo](sec.jpeg)
 ### Figura 01 – User Flow
 
 Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura comum que é apresentada na figura 2. Nesta estrutura existem 3 grandes blocos, descritos a seguir:
@@ -175,6 +176,7 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 - **Conteúdo** - apresenta o conteúdo da tela em questão;
 - **Rodapé** - apresenta informações sobre os direitos autorais.
 
+![Texto alternativo](prime.jpeg)
 ### Figura 02 – Protótipo de baixa qualidade
 
 ## 4. Metodologia
@@ -199,6 +201,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 O quadro kanban do grupo no GitHub está disponível no link [GitHub Kanban](https://github.com/orgs/ICEI-PUCMinas-PBE-ADS-SI/projects/13) e é apresentado, no estado atual, na figura abaixo:
 
+![Texto alternativo](terc.jpeg)
 ### Figura 03 - Tela do kanban no GitHub utilizada pelo grupo
 
 ### Etiquetas
@@ -208,6 +211,9 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 - **Desenvolvimento** (Development)
 - **Documentação** (Documentation)
 - **Testes** (Tests)
+
+![Texto alternativo](quart.jpeg)
+###Figura 04 - Tela do esquema de cores e categorias
 
 ### Ferramentas
 
