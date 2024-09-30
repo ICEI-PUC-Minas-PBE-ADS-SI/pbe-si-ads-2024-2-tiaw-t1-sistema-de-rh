@@ -1,4 +1,4 @@
-## 3. Projeto de Interface
+# 3. Projeto de Interface
 
 O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
@@ -14,7 +14,7 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 ![image](https://github.com/user-attachments/assets/207587f1-1117-4157-9181-aaeb640ecb7c)
 #### Figura 02 – Protótipo de baixa qualidade
 
-### Wireframes
+## Wireframes
 
 ### Home Page
 ![image](https://github.com/user-attachments/assets/3fc0697f-15ec-4a07-b64e-350bfccfbc46)
