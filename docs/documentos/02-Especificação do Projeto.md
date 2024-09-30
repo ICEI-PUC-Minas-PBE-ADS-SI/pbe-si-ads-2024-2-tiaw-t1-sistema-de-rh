@@ -1,3 +1,5 @@
+# 02. Especificação do Projeto
+
 ## Perfis de Usuários
 
 | Perfil            | Descrição                                    | Objetos e Lugares                                                                                                        | Objetivos Chave                                                                                                                                               | Como devemos tratá-lo                                                                                                                                         | Nunca devemos                                                                                                                         |
