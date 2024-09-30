@@ -176,7 +176,7 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 - **Conteúdo** - apresenta o conteúdo da tela em questão;
 - **Rodapé** - apresenta informações sobre os direitos autorais.
 
-![Texto alternativo](prime.jpeg)
+![Texto alternativo](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/188e6cbcec42c3c1086134df8c7adf5901751b39/prime.jpeg)
 ### Figura 02 – Protótipo de baixa qualidade
 
 ## 4. Metodologia
