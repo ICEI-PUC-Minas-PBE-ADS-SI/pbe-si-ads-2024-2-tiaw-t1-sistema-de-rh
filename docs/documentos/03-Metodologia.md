@@ -212,7 +212,7 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 - **Documentação** (Documentation)
 - **Testes** (Tests)
 
-![Texto alternativo](quart.jpeg)
+![Texto alternativo](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/501ff3736fb6a0552ee596c39e1080f5a39473e2/quart.jpeg)
 ###Figura 04 - Tela do esquema de cores e categorias
 
 ### Ferramentas
