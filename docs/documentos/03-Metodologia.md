@@ -20,7 +20,8 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 O quadro kanban do grupo no GitHub está disponível no link [GitHub Kanban](https://github.com/orgs/ICEI-PUCMinas-PBE-ADS-SI/projects/13) e é apresentado, no estado atual, na figura abaixo:
 
-![Texto alternativo](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/404c0651b8ca093d1466421036a440ab2100a241/terc.jpeg)
+![image](https://github.com/user-attachments/assets/209a9830-f1ff-429e-af63-f14bd510c1f6)
+
 ### Figura 03 - Tela do kanban no GitHub utilizada pelo grupo
 
 ### Etiquetas
@@ -31,7 +32,8 @@ As tarefas são, ainda, etiquetadas em função da natureza da atividade e segue
 - **Documentação** (Documentation)
 - **Testes** (Tests)
 
-![Texto alternativo](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/501ff3736fb6a0552ee596c39e1080f5a39473e2/quart.jpeg)
+![image](https://github.com/user-attachments/assets/7a1db8b4-e13a-496d-bceb-ea241c5995ef)
+
 
 ###Figura 04 - Tela do esquema de cores e categorias
 
