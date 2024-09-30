@@ -168,7 +168,7 @@ Matheus não aceita sistemas que o façam perder tempo ou que não ofereçam as 
 
 O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
-![Texto alternativo](sec.jpeg)
+![Texto alternativo](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/6412e2776aa95e8275ead2b2924f286c131d11c7/sec.jpeg)
 ### Figura 01 – User Flow
 
 Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura comum que é apresentada na figura 2. Nesta estrutura existem 3 grandes blocos, descritos a seguir:
