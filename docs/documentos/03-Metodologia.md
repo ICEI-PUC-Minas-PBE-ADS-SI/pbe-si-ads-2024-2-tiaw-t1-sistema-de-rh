@@ -11,26 +11,27 @@
 ## Professor Tutor:
 - Clóvis Lemos Tavares
 
-**Betim, 2024**
+Betim  
+2024
 
 ---
 
 ## Sumário
-1. [Documentação de Contexto](#documentação-de-contexto)
-   - [Introdução](#introdução)
-   - [Problema](#problema)
-   - [Objetivos](#objetivos)
-   - [Justificativa](#justificativa)
-   - [Público-alvo](#público-alvo)
-2. [Especificação do Projeto](#especificação-do-projeto)
-   - [Perfis de Usuários](#perfis-de-usuários)
-   - [Histórias de usuários](#histórias-de-usuários)
-   - [Requisitos do Projeto](#requisitos-do-projeto)
-     - [Requisitos Funcionais](#requisitos-funcionais)
-     - [Requisitos não funcionais](#requisitos-não-funcionais)
-3. [Projeto de Interface](#projeto-de-interface)
-4. [Metodologia](#metodologia)
-5. [Referências Bibliográficas](#referências-bibliográficas)
+1. Documentação de Contexto 3
+   - Introdução 3
+   - Problema 3
+   - Objetivos 3
+   - Justificativa 4
+   - Público-alvo 5
+2. Especificação do Projeto 6
+   - Perfis de Usuários 6
+   - Histórias de usuários 9
+   - Requisitos do Projeto 10
+     - Requisitos Funcionais 10
+     - Requisitos não funcionais 11
+3. Projeto de Interface 12
+4. Metodologia 13
+5. Referências Bibliográficas 16
 
 ---
 
@@ -51,16 +52,16 @@ A taxa de desemprego entre os jovens é geralmente bem maior do que a verificada
 Nota-se, portanto, a necessidade de reverter esse cenário de desemprego no Brasil. Para tal, é fulcral levar em consideração que a ausência de uma plataforma que disponibiliza vagas mais personalizadas e faz a intermediação entre empresa e candidato pode resultar em dificuldades na hora de se ingressar no mercado de trabalho.
 
 ### Objetivos
-O objetivo geral deste projeto é o desenvolvimento de uma solução de fácil uso que permita aos usuários a busca de vagas de emprego. Como objetivos específicos, podemos destacar:
+O objetivo geral deste projeto é o desenvolvimento de uma solução de fácil uso que permita aos usuários a busca de vagas de emprego.
+
+Como objetivos específicos, podemos destacar:
 - Vagas personalizadas;
 - Conectar empresas e candidatos em um local centralizado;
 - Oferecer um ambiente de uso gratuito para apoiar os usuários em seu desenvolvimento profissional;
 - Praticidade na busca de um emprego.
 
 ### Justificativa
-De acordo PAULUCCI, Leonardo Passos; DEL VECHIO, Gustavo Henrique. Em “A importância do ambiente digital para o relacionamento da marca com clientes: estudo de caso da coca-cola como um caso de sucesso”. Revista Interface Tecnológica, v. 15, n. 1, p. 51-62, 2018.
-
-"Tal, ambiente digital mostra-se, assim, bastante propício para as empresas, de uma infinidade de segmentos, não apenas divulgarem suas marcas no universo on-line, mas também oferecerem produtos e serviços bem como manterem uma relação estreita de conectividade com seu público."
+De acordo com PAULUCCI, Leonardo Passos; DEL VECHIO, Gustavo Henrique. Em “A importância do ambiente digital para o relacionamento da marca com clientes: estudo de caso da Coca-Cola como um caso de sucesso”. Revista Interface Tecnológica, v. 15, n. 1, p. 51-62, 2018. "Tal ambiente digital mostra-se, assim, bastante propício para as empresas, de uma infinidade de segmentos, não apenas divulgarem suas marcas no universo on-line, mas também oferecerem produtos e serviços, bem como manterem uma relação estreita de conectividade com seu público."
 
 Portanto, a criação de ambientes digitais para a resolução da carência de referências empregatícias é importante pela presença da internet na vida das pessoas, e os fins aos quais estes a utilizam. A internet permite que aqueles que buscam vagas de emprego acessem uma vasta quantidade de informações de diversas fontes e permite que os mesmos interajam com empregadores de grande, médio e pequeno porte.
 
@@ -73,7 +74,9 @@ Embora os desafios relacionados com a procura de emprego possam surgir em difere
 
 Portanto, esta solução é direcionada a homens e mulheres que enfrentam barreiras na transição para o mercado de trabalho. Além da necessidade de maior autonomia nas escolhas profissionais, esses indivíduos devem se adaptar rapidamente às demandas do mercado, e essas mudanças podem impactar na sua capacidade de se destacarem em suas aplicações.
 
-Para entender melhor o público-alvo, foi criado um formulário do Google Forms para coletar informações de candidatos a emprego, incluindo trabalhadores em busca de novas oportunidades, aqueles que foram demitidos e profissionais mudando de carreira. Isso tornou possível identificar algumas características e ações que são comuns entre eles. São elas:
+Para entender melhor o público-alvo, foi criado um formulário do Google Forms para coletar informações de candidatos a emprego, incluindo trabalhadores em busca de novas oportunidades, aqueles que foram demitidos e profissionais mudando de carreira. Isso tornou possível identificar algumas características e ações que são comuns entre eles.
+
+São elas:
 1. Agitada gestão do tempo;
 2. Uso intenso de tecnologia para fins de busca de emprego;
 3. Busca por oportunidades melhores.
@@ -85,71 +88,93 @@ Vale ressaltar que o projeto não se limita às pessoas mencionadas acima, mas t
 ## 2. Especificação do Projeto
 
 ### Perfis de Usuários
+
 #### Perfil 01: Chef de Cozinha
 **Descrição:** Chef de cozinha que busca um emprego fixo.
 
-**Objetos e Lugares:** Além do uniforme, ele utiliza facas, utensílios e equipamentos de alta qualidade, como fogões e fornos no trabalho. Mantendo consigo um caderno de anotações com as suas receitas favoritas, utilizadas na hora de seu processo criativo. No digital, ele usa seu celular para redes sociais e inspiração, e seu notebook para planejar cardápios e aprender novas tecnologias.
+**Objetos e lugares:**  
+Além do uniforme, ele utiliza facas, utensílios e equipamentos de alta qualidade, como fogões e fornos no trabalho. Mantendo consigo um caderno de anotações com as suas receitas favoritas, utilizadas na hora de seu processo criativo. No digital, ele usa seu celular para redes sociais e inspiração, e seu notebook para planejar cardápios e aprender novas tecnologias.
 
-**Objetivos Chave:** Seus principais objetivos são encontrar vagas compatíveis com sua formação em Gastronomia, principalmente em restaurantes focados na culinária estrangeira. Ele precisa desse serviço para ganhar maior facilidade em um mercado tão competitivo, permitindo que ele tenha um contato direto com os restaurantes.
+**Objetivos chave:**  
+Seus principais objetivos são encontrar vagas compatíveis com sua formação em Gastronomia, principalmente em restaurantes focadas na culinária estrangeira. Ele precisa desse serviço para ganhar maior facilidade em um mercado tão competitivo, permitindo que ele tenha um contato direto com os restaurantes.
 
-**Como Devemos Tratá-la:** Ele valoriza a praticidade, então o sistema deve ser intuitivo e de fácil navegação, com filtros que permitam encontrar rapidamente vagas alinhadas ao seu perfil. Além disso, fornecer recomendações de vagas personalizadas com base nas suas qualificações e preferências o fará sentir que o sistema entende suas necessidades; receber uma notificação ou então ver vagas recomendadas para ele é algo que o faz feliz.
+**Como devemos tratá-la:**  
+Ele valoriza a praticidade, então o sistema deve ser intuitivo e de fácil navegação, com filtros que permitam encontrar rapidamente vagas alinhadas ao seu perfil. Além disso, fornecer recomendações de vagas personalizadas com base nas suas qualificações e preferências o fará sentir que o sistema entende suas necessidades. Receber uma notificação ou ver vagas recomendadas para ele é algo que o faz feliz.
 
-**Nunca Devemos:** Nunca devemos oferecer um sistema confuso, com erros constantes ou com promessas falsas, como vagas inexistentes. Isso é algo capaz de deixá-lo furioso. Ele valoriza a eficiência e a honestidade, logo não suporta qualquer coisa que o faça pensar que o serviço é ineficaz ou desperdiça seu tempo.
+**Nunca devemos:**  
+Nunca devemos oferecer um sistema confuso, com erros constantes ou com promessas falsas, como vagas inexistentes. Isso é algo capaz de deixá-lo furioso. Ele valoriza a eficiência e a honestidade, logo não suporta qualquer coisa que o faça pensar que o serviço é ineficaz ou desperdiça seu tempo, deve ser evitada.
 
 #### Perfil 02: Freelancer
 **Descrição:** Deseja um emprego de Bartender.
 
-**Objetos e Lugares:** Um bartender precisa de uma coqueteleira, copo de bar, colher de barman, coador, medidor, abridor de garrafas, espremedor e balde de gelo para preparar os drinks no balcão. Além de conhecimento sobre bebidas, habilidades de serviço ao cliente, higiene, educação e treinamento para atender os clientes da melhor forma possível.
+**Objetos e lugares:**  
+Um bartender precisa de uma coqueteleira, copo de bar, colher de barman, coador, medidor, abridor de garrafas, espremedor e balde de gelo para preparar os drinks no balcão. Além de conhecimento sobre bebidas, habilidades de serviço ao cliente, higiene, educação e treinamento para poder atender os clientes da melhor forma possível.
 
-**Objetivos Chave:** O principal objetivo de João é poder ser um bartender famoso, criar o seu próprio drink e se tornar famoso por isso. Ele precisa desse serviço para estar sempre inserido no mercado de trabalho, além de realizar seu sonho.
+**Objetivos chave:**  
+O principal objetivo de João é poder ser um bartender famoso, criar o seu próprio drink e se tornar famoso por isso. Ele precisa desse serviço para poder estar sempre inserido no mercado de trabalho, além de poder realizar seu sonho.
 
-**Como Devemos Tratá-la:** João gosta de ser tratado com respeito e empatia, e não gosta que as pessoas o desrespeitem. Um comportamento que deixa João feliz é quando falam que o drink estava bom, isso o deixa feliz e confiante.
+**Como devemos tratá-la:**  
+João gosta de ser tratado com respeito e empatia, não gosta que as pessoas o desrespeitem. Um comportamento que deixa João feliz é quando falam que o drink estava bom; isso deixa ele feliz e confiante.
 
-**Nunca Devemos:** Não devemos fornecer um local de trabalho que não seja apropriado para seu trabalho. João gosta de trabalhar em um local limpo e organizado e não suporta trabalhar com uma equipe onde as pessoas não têm responsabilidade com o trabalho.
+**Nunca devemos:**  
+Não devemos fornecer um local de trabalho que não seja apropriado para seu trabalho. João gosta de trabalhar em um local limpo e organizado. Ele não suporta trabalhar com uma equipe onde as pessoas não têm responsabilidade com o trabalho.
 
 #### Perfil 03: Estagiário
 **Descrição:** Busca um estágio.
 
-**Objetos e Lugares:** Ele usa um computador para jogar Valorant, estudar e procurar estágios. Durante os jogos, ele busca informações na internet sobre o mercado de trabalho. Em casa, ele tem o auxílio dos pais e amigos. Ele também pode fazer uso de um telefone, computador e videogame.
+**Objetos e lugares:**  
+Ele usa um computador para jogar Valorant, estudar e procurar estágios. Durante os jogos, ele usa um controle e fone de ouvido para uma melhor experiência. Matheus não sai do celular, utilizando diariamente para comunicação, mídia social e entretenimento. Digitalmente, ele tem instalado no seu computador softwares como o VS Code, Canvas e PowerPoint, utilizados para realizar as tarefas da faculdade.
 
-**Objetivos Chave:** A principal meta do estagiário é desenvolver suas habilidades em um ambiente profissional. Para ele, o estágio deve ser um divisor de águas em sua carreira, onde o mesmo possa adquirir experiências práticas em sua área de atuação.
+**Objetivos chave:**  
+O principal objetivo é facilitar a busca por oportunidades de estágio, principalmente na área de tecnologia e programação. Ele precisa desse serviço para ter acesso a várias opções de empresas que se adequem ao seu perfil, assim ele se sente mais seguro.
 
-**Como Devemos Tratá-la:** É importante que a plataforma mostre transparência sobre as ofertas, permitindo que o estagiário saiba como funciona a dinâmica do estágio e o que é esperado dele. Deve haver clareza nas informações sobre as empresas e as vagas disponíveis, para que se sinta mais seguro ao se inscrever.
+**Como devemos tratá-la:**  
+Ele é uma pessoa que busca reconhecimento, e a maneira mais fácil de tratá-lo é mostrando que ele é um grande profissional e que vai conseguir um estágio. A forma de tratá-lo que mais o deixa feliz é ao mostrar oportunidades que sejam compatíveis com seus estudos e que também respeitem seu tempo livre.
 
-**Nunca Devemos:** Não devemos fazer promessas de estágios com exigências excessivas ou condições que não sejam favoráveis ao estagiário. Isso só trará frustração e desconfiança.
+**Nunca devemos:**  
+Matheus não aceita sistemas que o façam perder tempo ou que não ofereçam as opções que ele precisa. Ele não suporta ser ignorado, e um atendimento ao cliente que não ofereça ajuda é um grande ponto negativo.
 
 ### Histórias de usuários
-1. **Maria, 22 anos**: Cansada de enviar currículos e nunca receber resposta, ela decide usar a plataforma, onde encontra uma vaga que combina com suas habilidades e é contatada em menos de uma semana.
-   
-2. **Carlos, 19 anos**: Recém-formado, Carlos se cadastra na plataforma e, após uma semana, consegue uma entrevista para o estágio dos seus sonhos.
 
-3. **João, 25 anos**: Depois de ser demitido, João utiliza a plataforma e encontra uma nova oportunidade que se encaixa perfeitamente nas suas expectativas salariais e de horário.
+#### História de usuário 01: Chef de Cozinha
+**Como** um chef de cozinha  
+**Eu quero** encontrar oportunidades alinhadas à minha formação e interesse,  
+**Para que** eu possa desenvolver minha carreira de forma contínua e atingir um bom patamar na profissão.
+
+#### História de usuário 02: Freelancer
+**Como** um bartender  
+**Eu quero** uma plataforma que me ofereça as melhores oportunidades de trabalho,  
+**Para que** eu possa atingir meu objetivo de ser um bartender famoso.
+
+#### História de usuário 03: Estagiário
+**Como** um estudante de tecnologia  
+**Eu quero** uma forma prática de encontrar estágios na área,  
+**Para que** eu possa evoluir na minha carreira e obter mais experiência.
 
 ### Requisitos do Projeto
+
 #### Requisitos Funcionais
-- O sistema deve permitir o cadastro de empresas e candidatos.
-- O sistema deve oferecer um mecanismo de busca para as vagas disponíveis.
-- O sistema deve enviar notificações para candidatos quando surgirem novas vagas que se encaixem no perfil.
+1. O sistema deve permitir que o usuário cadastre seu perfil com dados pessoais e profissionais.
+2. O sistema deve oferecer uma interface para a pesquisa de vagas de emprego e estágios.
+3. O sistema deve notificar o usuário sobre novas vagas que se encaixem no seu perfil.
 
 #### Requisitos não funcionais
-- O sistema deve ser seguro e proteger as informações dos usuários.
-- O sistema deve ser responsivo, funcionando em dispositivos móveis e desktop.
-- O sistema deve ter uma interface amigável e intuitiva.
+1. O sistema deve ter uma interface intuitiva, de fácil navegação.
+2. O sistema deve garantir a privacidade e segurança dos dados dos usuários.
 
 ---
 
 ## 3. Projeto de Interface
-*(Aqui devem ser incluídas as telas do projeto)*
+(Esboços e protótipos aqui)
 
 ---
 
 ## 4. Metodologia
-*(Aqui deve ser incluída a descrição da metodologia utilizada)*
+(Descrição da metodologia a ser utilizada no projeto)
 
 ---
 
 ## 5. Referências Bibliográficas
-- Lima, J. P., & Rodrigues, A. R. (2018). *Gestão de Recursos Humanos: Desafios e Oportunidades*. Editora XYZ.
-- PAULUCCI, L. P., & DEL VECHIO, G. H. (2018). A importância do ambiente digital para o relacionamento da marca com clientes: estudo de caso da coca-cola como um caso de sucesso. Revista Interface Tecnológica, v. 15, n. 1, p. 51-62.
-- SMITHSON, J., LEWIS, S., & GUERREIRO, M. D. (1998). Percepções dos jovens sobre a insegurança no emprego e suas implicações no trabalho e na vida familiar.
-
+- LIMA, João; RODRIGUES, Maria. "Desafios e Oportunidades no Mercado de Trabalho". Editora Tal, 2018.
+- PAULUCCI, Leonardo Passos; DEL VECHIO, Gustavo Henrique. "A importância do ambiente digital para o relacionamento da marca com clientes". Revista Interface Tecnológica, v. 15, n. 1, p. 51-62, 2018.
+- SMITHSON, Janet; LEWIS, Suzan; GUERREIRO, Maria das Dores. "Percepções dos jovens sobre a insegurança no emprego". 1998.
