@@ -27,8 +27,8 @@ Betim
    - Perfis de Usuários 6
    - Histórias de usuários 9
    - Requisitos do Projeto 10
-     - Requisitos Funcionais 10
-     - Requisitos não funcionais 11
+   - Requisitos Funcionais 10
+   - Requisitos não funcionais 11
 3. Projeto de Interface 12
 4. Metodologia 13
 5. Referências Bibliográficas 16
