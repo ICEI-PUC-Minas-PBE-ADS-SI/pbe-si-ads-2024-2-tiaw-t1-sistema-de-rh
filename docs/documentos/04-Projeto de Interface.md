@@ -18,48 +18,65 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 
 ### Home Page
 
+A tela de home page apresenta banners que remetem para as vagas, depoimentos de estudantes e uma breve descrição sobre o projeto.
 ![HomePage](https://github.com/user-attachments/assets/33ae268f-5c37-40a8-9ed6-f8f68b91375a)
 
 ---
 
 ### Tela de Vagas
+
+A tela de vagas apresenta todas as vagas cadastradas pelas empresas parceiras
 ![Vaga_Disponivel](https://github.com/user-attachments/assets/379bf48b-92fb-4932-a129-ea481d6d476a)
 
 ---
 
 ### Detalhes da Vaga
+
+A tela de detalhes mostra os datalhes da vaga selecionada, empresa, salário e ramo de atuação. Além do botão (Me interessei)
 ![Detalhes_Vaga](https://github.com/user-attachments/assets/5406ba10-d2e0-4b44-8d01-be82b8b2dd8a)
 
 ---
 
 ### Cadastrar Vaga
+
+A tela de cadastro de vagas permite as empresas cadastrarem a sua demanda.
 ![Cadastro_Vaga](https://github.com/user-attachments/assets/ccd008c0-3815-49e0-96a7-b3d259f217cc)
 
 ---
 
 
 ### Login
+
+A telad e login permite os usuarios acessarem as suas contas
 ![Login](https://github.com/user-attachments/assets/8eb11db4-0bcb-481b-96a5-a266d44a8731)
 
 ---
 
 ### Tipo de Cadastro
+
+A tela de tipo de Cadastro realiza a filtragem entre empresa e candidato
 ![Tipo_Cadastro](https://github.com/user-attachments/assets/3b526d0a-6b4c-4b46-b956-0066ed96698f)
 
 ---
 
 ### Cadastro para Candidato
+
+Permite o cadastro de usuarios
 ![Cadastro_Candidato](https://github.com/user-attachments/assets/71f09d85-0345-4f96-a360-79b01636bcff)
 
 
 ---
 
 ### Cadastro para Empresas
+
+Permite o cadastro de Empresas, somente após a empresa ser cadastrada será possível realizar a divulgação de uma vaga
 ![Cadastro_Empresa](https://github.com/user-attachments/assets/324b2d02-3313-4c86-b717-00fb75ff5fc4)
 
 ---
 
 ### Perfil de Usuário
+
+Tela que mostra as principais informções do Usuario: Nome, email, Vaga de interesse e mais!
 ![Perfil_Usuario](https://github.com/user-attachments/assets/72614ef9-b97f-41d2-9866-964a9dcc62b3)
 
 ---
