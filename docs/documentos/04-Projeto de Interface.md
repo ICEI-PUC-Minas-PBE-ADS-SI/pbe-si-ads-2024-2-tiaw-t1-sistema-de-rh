@@ -49,7 +49,8 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 ---
 
 ### Cadastro para Candidato
-![Tipo_Cadastro](https://github.com/user-attachments/assets/3b526d0a-6b4c-4b46-b956-0066ed96698f)
+![Cadastro_Candidato](https://github.com/user-attachments/assets/71f09d85-0345-4f96-a360-79b01636bcff)
+
 
 ---
 
@@ -58,7 +59,7 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 
 ---
 
-### Tipo de Cadastro
+### Perfil de Usuário
 ![Perfil_Usuario](https://github.com/user-attachments/assets/72614ef9-b97f-41d2-9866-964a9dcc62b3)
 
 ---
