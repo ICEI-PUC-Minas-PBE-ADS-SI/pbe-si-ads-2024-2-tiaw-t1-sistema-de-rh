@@ -17,33 +17,49 @@ Protótipo de baixa fidelidade: As telas do sistema apresentam uma estrutura com
 ## Wireframes
 
 ### Home Page
-![image](https://github.com/user-attachments/assets/3fc0697f-15ec-4a07-b64e-350bfccfbc46)
+
+![HomePage](https://github.com/user-attachments/assets/33ae268f-5c37-40a8-9ed6-f8f68b91375a)
 
 ---
 
-### Tela de Login
-![image](https://github.com/user-attachments/assets/eda87fa8-60ae-4ded-8007-c628082e64cd)
+### Tela de Vagas
+![Vaga_Disponivel](https://github.com/user-attachments/assets/379bf48b-92fb-4932-a129-ea481d6d476a)
 
 ---
 
-### Tela de Cadastro de Usuário
-![image](https://github.com/user-attachments/assets/5c29f125-44cf-477f-bdb7-de95f5ae05cf)
+### Detalhes da Vaga
+![Detalhes_Vaga](https://github.com/user-attachments/assets/5406ba10-d2e0-4b44-8d01-be82b8b2dd8a)
 
 ---
 
-### Perfil do usuário
-![image](https://github.com/user-attachments/assets/af1bb956-04b2-4500-be43-53f74ab2473d)
+### Cadastrar Vaga
+![Cadastro_Vaga](https://github.com/user-attachments/assets/ccd008c0-3815-49e0-96a7-b3d259f217cc)
 
 ---
 
-### Filtragem de Vagas
-![image](https://github.com/user-attachments/assets/ca55d268-17e5-4b40-b3f3-6173ee779882)
 
+### Login
+![Login](https://github.com/user-attachments/assets/8eb11db4-0bcb-481b-96a5-a266d44a8731)
 
 ---
 
-### Vagas Disponíveis
-![image](https://github.com/user-attachments/assets/99674882-d538-495d-ae0a-4eeb76c987e9)
+### Tipo de Cadastro
+![Tipo_Cadastro](https://github.com/user-attachments/assets/3b526d0a-6b4c-4b46-b956-0066ed96698f)
+
+---
+
+### Cadastro para Candidato
+![Tipo_Cadastro](https://github.com/user-attachments/assets/3b526d0a-6b4c-4b46-b956-0066ed96698f)
+
+---
+
+### Cadastro para Empresas
+![Cadastro_Empresa](https://github.com/user-attachments/assets/324b2d02-3313-4c86-b717-00fb75ff5fc4)
+
+---
+
+### Tipo de Cadastro
+![Perfil_Usuario](https://github.com/user-attachments/assets/72614ef9-b97f-41d2-9866-964a9dcc62b3)
 
 ---
 
