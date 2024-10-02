@@ -2,7 +2,8 @@
 
 O fluxograma apresentado na figura 1 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue.
 
-![image](https://github.com/user-attachments/assets/82b27ba8-7d53-4725-9b8e-4969b1e6ab5c)
+![FLUXO](https://github.com/user-attachments/assets/0306997f-ff4f-4d9b-b773-6d0ddce09e59)
+
 
 #### Figura 01 – User Flow
 
