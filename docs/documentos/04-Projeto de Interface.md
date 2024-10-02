@@ -28,7 +28,7 @@ A tela de home page apresenta banners que remetem para as vagas, depoimentos de 
 ### Tela de Vagas
 
 A tela de vagas apresenta todas as vagas cadastradas pelas empresas parceiras
-![Vaga_Disponivel](https://github.com/user-attachments/assets/379bf48b-92fb-4932-a129-ea481d6d476a)
+![Tela_Vagas](https://github.com/user-attachments/assets/5c069666-6910-4887-823c-3cea6690835a)
 
 #### Figura 04 – Tela de Vagas
 ---
@@ -36,7 +36,8 @@ A tela de vagas apresenta todas as vagas cadastradas pelas empresas parceiras
 ### Detalhes da Vaga
 
 A tela de detalhes mostra os datalhes da vaga selecionada, empresa, salário e ramo de atuação. Além do botão (Me interessei)
-![Detalhes_Vaga](https://github.com/user-attachments/assets/5406ba10-d2e0-4b44-8d01-be82b8b2dd8a)
+![Detalhes_Vaga](https://github.com/user-attachments/assets/5406ba10-d2e0-4b44-8d01-be82b8b2dd8a)![Uploading Detalhes_Vagas.png…]()
+
 
 #### Figura 05 – Detalhes da Vaga
 ---
