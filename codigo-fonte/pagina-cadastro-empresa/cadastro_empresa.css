@@ -1,0 +1,41 @@
+.centro {
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+#linkMenu>a {
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container-fluid> :first-child {
+    font-size: 25px;
+
+}
+
+.container-fluid> :first-child:hover {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#linkMenu>a:hover {
+    border: solid 1px;
+    font-size: 101%;
+}
+
+.footer {
+    margin-top: 100%;
+    margin-right: 0px;
+    color: white;
+    /* Cor do texto do footer */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: 10px;
+    /* Espaçamento interno do footer */
+    height: 50px;
+}
