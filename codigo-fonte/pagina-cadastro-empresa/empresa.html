@@ -12,24 +12,77 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white ms-5" href="#">Sistema de RH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto me-3" id="linkMenu">
-                    <a class="nav-link text-white" href="#">Consultar Vagas</a>
-                    <a class="nav-link text-white" href="#">Cadastrar Vaga</a>
-                    <a class="nav-link text-dark bg-white" href="#">Cadastro</a>
-                    <a class="nav-link text-white bg-dark" href="#">Entrar</a>
-                    <a class="nav-link text-white bg-dark" id="meuPerfil" href="#">Meu Perfil</a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white ms-5" href="#">Sistema de RH</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto me-3" id="linkMenu">
+                        <a class="nav-link text-white" href="#">Consultar Vagas</a>
+                        <a class="nav-link text-white" href="#">Cadastrar Vaga</a>
+                        <a class="nav-link text-dark bg-white" href="#">Cadastro</a>
+                        <a class="nav-link text-white bg-dark" href="#">Entrar</a>
+                        <a class="nav-link text-white bg-dark" id="meuPerfil" href="#">Meu Perfil</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-form">
+            <form id="form">
+                <div class="cadastrar">
+                    <h1 class="titulo">Sign Up</h1>
+                    <h2 class="subTitulo">Cadastro para Empresas</h2>
+                    <div class="caixas">
+                        <div class="caixa">
+                            <label>Nome da Empresa *</label><br />
+                            <input type="text" name="nome" id="nome" minlength="4" required
+                                placeholder="Digite seu nome"><br />
+                        </div>
+                        <div class="caixa">
+                            <label>Email *</label><br />
+                            <input type="email" name="email" id="email" required placeholder="Digite seu email"></br>
+                        </div>
+                        <div class="caixa">
+                            <label>CNPJ *</label><br />
+                            <input type="text" name="cnpj" id="cnpj" required placeholder="Digite seu CNPJ"></br>
+                        </div>
+                        <div class="caixa">
+                            <label>Cidade *</label><br />
+                            <input type="text" name="cidade" id="cidade" minlength="3" required
+                                placeholder="Cidade de Atuação"></br>
+                        </div>
+                        <div class="caixa">
+                            <label>Estado *</label><br />
+                            <input type="text" name="estado" id="estado" required placeholder="Estado de Atuação"></br>
+                        </div>
+                        <div class="caixa">
+                            <label>Senha *</label><br />
+                            <input type="password" name="senha" id="senha" minlength="6" required
+                                placeholder="Crie uma senha"></br>
+
+                        </div>
+                        <div class="caixa">
+                            <label>Confirmação de senha *</label><br />
+                            <input type="password" name="confirmeSenha" id="confirmeSenha" minlength="6" required
+                                placeholder="Confirme sua senha"></br>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="form-btn" id="btn">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </nav>
+
+    </main>
 
 
     <footer class="footer bg-success">
