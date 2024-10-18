@@ -146,4 +146,9 @@ input{
         height: 100%;
     }
 
+    header a{
+        width: max-content;
+        
+    }
+
 }
