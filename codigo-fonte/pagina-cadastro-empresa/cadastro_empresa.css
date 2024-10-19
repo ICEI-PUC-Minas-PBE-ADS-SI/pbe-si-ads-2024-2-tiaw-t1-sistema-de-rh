@@ -12,30 +12,50 @@
 
 }
 
+#cadastro {
+    color: black;
+    background-color: white;
+}
+
+#entrar {
+    background-color: black;
+    color: white;
+}
+
+#meuPerfil {
+    background-color: black;
+    color: white;
+}
+
 .centro {
     margin: 0 auto;
     display: flex;
 }
+
 #linkMenu>a {
     margin-right: 20px;
     border-radius: 5px;
     padding: 5px;
 }
+
 .container-fluid> :first-child {
     font-size: 25px;
     font-weight: bold;
 
 }
+
 .container-fluid> :first-child:hover {
     border-radius: 5px;
     padding: 5px;
 }
+
 #linkMenu>a:hover {
 
     font-size: 101%;
     font-weight: bold;
 
 }
+
 /*Fim - Configuração Header*/
 
 
@@ -50,7 +70,7 @@
     margin: 100px auto;
     max-width: 400px;
     /* Define uma largura máxima para o formulário */
-   padding: 30px;
+    padding: 30px;
     /* Adiciona algum espaçamento interno */
     background-color: #ffffff;
     /* Fundo branco para o formulário */
@@ -61,14 +81,14 @@
     border: 1px solid black;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     margin-left: 10px;
     font-size: 40px;
     font-weight: bold;
 }
 
-.subTitulo{
+.subTitulo {
     text-align: center;
     margin-left: 10px;
     font-size: 15px;
@@ -77,22 +97,22 @@
     margin-bottom: 20px;
 }
 
-.caixa{
-    width:100%;
+.caixa {
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-input{
-    width: 100%;  
+input {
+    width: 100%;
     border: 1px solid black;
 }
 
-#btn{
+#btn {
     font-weight: bold;
 }
 
@@ -112,7 +132,7 @@ input{
     /* Bordas arredondadas no botão */
     cursor: pointer;
     /* Altera o cursor ao passar o mouse */
-    
+
 }
 
 .form-btn:hover {
@@ -137,18 +157,34 @@ input{
 
 @media screen and (max-width: 600px) {
 
-    .container-form{
-        max-width:350px;
+    .container-form {
+        max-width: 350px;
     }
 
-    .caixa{
-        width:100%;
+    .caixa {
+        width: 100%;
         height: 100%;
     }
 
-    header a{
+    header a {
         width: max-content;
-        
+
     }
+
+    #cadastro {
+        color: white;
+        background-color: transparent;
+    }
+
+    #entrar {
+        background-color: transparent;
+        color: white;
+    }
+
+    #meuPerfil {
+        background-color: transparent;
+        color: white;
+    }
+
 
 }

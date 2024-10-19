@@ -14,7 +14,23 @@ html {
     width: 100%;
     z-index: 1000;
     top: 0;
+    position: fixed;
 
+}
+
+#cadastro {
+    color: black;
+    background-color: white;
+}
+
+#entrar {
+    background-color: black;
+    color: white;
+}
+
+#meuPerfil {
+    background-color: black;
+    color: white;
 }
 
 .centro {
@@ -52,7 +68,8 @@ html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding-top: 80px; /* Ajuste por causa do header fixo */
+    padding-top: 80px;
+    /* Ajuste por causa do header fixo */
     text-align: center;
 }
 
@@ -83,10 +100,10 @@ h1 {
     color: black;
     border: 2px solid black;
 }
- 
 
 
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -107,12 +124,27 @@ a{
 
     }
 
-    .footer{
+    .footer {
         width: 100%;
     }
 
-    .btn{
+    .btn {
         width: 200px;
+    }
+
+    #cadastro {
+        color: white;
+        background-color: transparent;
+    }
+
+    #entrar {
+        background-color: transparent;
+        color: white;
+    }
+
+    #meuPerfil {
+        background-color: transparent;
+        color: white;
     }
 
 

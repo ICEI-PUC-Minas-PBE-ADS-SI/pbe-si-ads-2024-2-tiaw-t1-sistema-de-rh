@@ -24,14 +24,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto me-3" id="linkMenu">
                         <a class="nav-link text-white" href="#">Consultar Vagas</a>
-                        <a class="nav-link text-white" href="#">Cadastrar Vaga</a>
-                        <a class="nav-link text-dark bg-white" href="../pagina-tipo-cadastro/tipo.html">Cadastro</a>
-                        <a class="nav-link text-white bg-dark" href="#">Entrar</a>
-                        <a class="nav-link text-white bg-dark" id="meuPerfil" href="#">Meu Perfil</a>
+                        <!-- Links ocultados/mostrados dinamicamente -->
+                        <a class="nav-link text-white d-none" id="cadastrarVaga" href="#">Cadastrar Vaga</a>
+                        <a class="nav-link text-white d-none" id="meuPerfil" href="#">Meu Perfil</a>
+                        <a class="nav-link" id="cadastro" href="../pagina-tipo-cadastro/tipo.html">Cadastro</a>
+                        <a class="nav-link" id="entrar" href="#">Entrar</a>
+                        <!-- Botão de Sair -->
+                        <a class="nav-link text-white d-none bg-danger" id="sair" href="#">Sair</a>
                     </div>
+                    
                 </div>
             </div>
         </nav>
+        
     </header>
 
     <main>
@@ -92,6 +97,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="cadastro_empresa.js"></script>
 </body>
 
 </html>
