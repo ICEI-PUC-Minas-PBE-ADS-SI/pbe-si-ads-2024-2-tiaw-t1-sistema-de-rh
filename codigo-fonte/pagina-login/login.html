@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sistema de RH</div>
+            <ul class="nav-links">
+                <li><a href="#">Consultar Vagas</a></li>
+                <li><a href="#">Cadastrar Vagas</a></li>
+            </ul>
+            <button class="btn-entrar">Entrar</button>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <section class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <p>Insira as suas informações</p>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log in</button>
+            </form>
+            <p>Não tem uma conta? <a href="#">Junte-se a nós</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Sistema de RH. All rights reserved.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
