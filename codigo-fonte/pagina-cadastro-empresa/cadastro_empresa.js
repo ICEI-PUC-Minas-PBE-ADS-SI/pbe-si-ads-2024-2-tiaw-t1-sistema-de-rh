@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Armazena os dados do cadastro no localStorage
         localStorage.setItem("usuarioCadastrado", true);
+        localStorage.setItem("emailCadastrado", email); // Armazena o email no localStorage
+        localStorage.setItem("senhaCadastrada", senha); // Armazena a senha no localStorage
 
         // Exibe mensagem de sucesso
         alert("Cadastro realizado com sucesso!");
@@ -57,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("sair").addEventListener("click", function() {
         // Remove as informações de cadastro do localStorage
         localStorage.removeItem("usuarioCadastrado");
+        localStorage.removeItem("emailCadastrado");
+        localStorage.removeItem("senhaCadastrada");
 
         // Recarrega a página para aplicar as mudanças
         window.location.href = "../pagina-tipo-cadastro/tipo.html";

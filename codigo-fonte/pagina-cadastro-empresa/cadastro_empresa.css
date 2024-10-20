@@ -143,15 +143,10 @@ input {
 
 /*Inicio Configuração Footer*/
 .footer {
-
-    margin-right: 0px;
     color: white;
-    /* Cor do texto do footer */
     text-align: center;
-    /* Alinha o texto ao centro */
-    padding: 10px;
-    /* Espaçamento interno do footer */
-    height: 100%;
+    padding: 1rem;
+    bottom: 0;
     width: 100%;
 }
 
