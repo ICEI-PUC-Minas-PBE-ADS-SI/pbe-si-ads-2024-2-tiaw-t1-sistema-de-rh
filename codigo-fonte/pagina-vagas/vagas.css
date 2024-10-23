@@ -1,52 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
-body {
-    background-color: #f0f0f0;
-    color: #333;
+html {
+    width: 100%;
+    height: 100%;
 }
 
-header {
-    background-color: #004d00;
+
+/* Navbar */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    font-family: cursive !important;
+} 
+
+a:hover {
+    opacity: 0.7;
+  }
+
+
+#cadastro {
+    color: black;
+    background-color: white;
+}
+
+#entrar {
+    background-color: black;
     color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+#meuPerfil {
+    background-color: black;
+    color: white;
 }
 
-header nav ul {
-    list-style: none;
+.centro {
+    margin: 0 auto;
     display: flex;
 }
 
-header nav ul li {
+#linkMenu>a {
     margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header .perfil {
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
     border-radius: 5px;
+    padding: 5px;
 }
+
+.container-fluid> :first-child {
+    font-size: 25px;
+
+}
+
 
 main {
+    margin-top: 70px;
     display: flex;
     padding: 20px;
 }
@@ -83,21 +93,29 @@ main {
     margin-bottom: 15px;
 }
 
+.header a{
+    letter-spacing: 3px !important;
+    margin-left: 32px !important;
+}
+
+footer p{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
 .saiba-mais {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #004d00;
-    color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 footer {
-    background-color: #004d00;
-    color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
     width: 100%;
     bottom: 0;
+    color: white;
+    position: fixed;
+    font-family: cursive;
 }

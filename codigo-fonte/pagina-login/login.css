@@ -1,7 +1,6 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -12,13 +11,16 @@ html {
 
 /* Navbar */
 .header {
-
+    position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
-    position: fixed;
+    font-family: cursive;
+} 
 
-}
+a:hover {
+    opacity: 0.7;
+  }
 
 #cadastro {
     color: black;
@@ -48,20 +50,6 @@ html {
 
 .container-fluid> :first-child {
     font-size: 25px;
-    font-weight: bold;
-
-}
-
-.container-fluid> :first-child:hover {
-    border-radius: 5px;
-    padding: 5px;
-}
-
-#linkMenu>a:hover {
-
-    font-size: 101%;
-    font-weight: bold;
-
 }
 
 /* Login Form */
@@ -109,29 +97,33 @@ html {
     margin-top: 10px;
 }
 
-.login-box button:hover {
-    background-color: #333;
-}
-
 .login-box a {
     color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
-.login-box a:hover {
-    text-decoration: underline;
-}
 
 hr {
     margin: 20px 0;
 }
 
+.header a{
+    letter-spacing: 3px !important;
+    margin-left: 32px !important;
+}
+
+footer p{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
 /* Footer */
-.footer {
-    color: white;
+footer {
     text-align: center;
-    padding: 1rem;
-    bottom: 0;
+    padding: 20px;
+    position: fixed;
     width: 100%;
+    bottom: 0;
+    color: white;
+    font-family: cursive;
 }

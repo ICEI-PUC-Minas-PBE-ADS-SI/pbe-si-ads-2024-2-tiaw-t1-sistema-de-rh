@@ -1,54 +1,42 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Verifica se o usuário já está logado
-    const usuarioLogado = localStorage.getItem("usuarioLogado");
+// Função para autenticar o login
+function autenticarLogin(email, senha) {
+    // Busca no localStorage a lista de empresas
+    const dbEmpresas = JSON.parse(localStorage.getItem('dbEmpresas')) || [];
 
-    if (usuarioLogado) {
-        // Exibe os links de "Cadastrar Vaga" e "Meu Perfil" se o usuário estiver logado
-        document.getElementById("cadastrarVaga").classList.remove("d-none");
-        document.getElementById("meuPerfil").classList.remove("d-none");
-        document.getElementById("cadastro").classList.add("d-none"); // Esconde o link de "Cadastro"
-        document.getElementById("entrar").classList.add("d-none"); // Esconde o link de "Entrar"
-        document.getElementById("sair").classList.remove("d-none"); // Exibe o link de "Sair"
+    // Verifica se existe uma empresa com o email e a senha fornecidos
+    const empresaEncontrada = dbEmpresas.find(empresa => empresa.email === email && empresa.senha === senha);
+
+    if (empresaEncontrada) {
+        return true;  // Login válido
+    } else {
+        return false;  // Login inválido
     }
+}
 
-    // Função para o formulário de login
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede o envio do formulário
+// Função para atualizar o estado de login
+function realizarLogin() {
+    // Pega os valores de email e senha fornecidos pelo formulário
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('password').value;
 
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+    // Verifica se o login é válido
+    const loginValido = autenticarLogin(email, senha);
 
-        // Obtém o email e senha armazenados no localStorage durante o cadastro
-        const emailCadastrado = localStorage.getItem('emailCadastrado');
-        const senhaCadastrada = localStorage.getItem('senhaCadastrada');
+    if (loginValido) {
+        // Se o login for válido, salva o estado de login no localStorage
+        localStorage.setItem('isLoggedIn', true);
+        alert('Login realizado com sucesso!');
 
-        // Verifica se o email e senha coincidem com os dados armazenados
-        if (email === emailCadastrado && password === senhaCadastrada) {
-            alert("Login bem-sucedido!");
+        // Redireciona o usuário para a Home-page
+        window.location.href = '../home-page/index.html';
+    } else {
+        // Se o login for inválido, exibe uma mensagem de erro
+        alert('Email ou senha incorretos.');
+    }
+}
 
-            // Armazena o estado de login no localStorage
-            localStorage.setItem("usuarioLogado", true);
-
-            // Modifica o header para exibir os links corretos
-            document.getElementById("cadastrarVaga").classList.remove("d-none");
-            document.getElementById("meuPerfil").classList.remove("d-none");
-            document.getElementById("cadastro").classList.add("d-none"); // Esconde o link de "Cadastro"
-            document.getElementById("entrar").classList.add("d-none"); // Esconde o link de "Entrar"
-            document.getElementById("sair").classList.remove("d-none"); // Exibe o link de "Sair"
-
-            // Aqui você pode redirecionar o usuário ou fazer outras ações
-            //window.location.href = "dashboard.html"; // Exemplo de redirecionamento
-        } else {
-            alert("Email ou senha incorretos. Tente novamente.");
-        }
-    });
-
-    // Função para o botão de "Sair"
-    document.getElementById("sair").addEventListener("click", function() {
-        // Remove as informações de login do localStorage
-        localStorage.removeItem("usuarioLogado");
-
-        // Recarrega a página para aplicar as mudanças
-        window.location.href = "login.html"; // Exemplo de redirecionamento para a página de login
-    });
+// Evento de submit no formulário de login
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault();  // Evita o recarregamento da página
+    realizarLogin();  // Chama a função para realizar o login
 });

@@ -1,68 +1,88 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Verifica se o usuário já realizou o cadastro
-    const cadastroFeito = localStorage.getItem("usuarioCadastrado");
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Impede o recarregamento da página
 
-    if (cadastroFeito) {
-        // Exibe os links de "Cadastrar Vaga" e "Meu Perfil" se o usuário estiver cadastrado
-        document.getElementById("cadastrarVaga").classList.remove("d-none");
-        document.getElementById("meuPerfil").classList.remove("d-none");
-        document.getElementById("cadastro").classList.add("d-none"); // Esconde o link de "Cadastro"
-        document.getElementById("entrar").classList.add("d-none"); // Esconde o link de "Entrar"
-        document.getElementById("sair").classList.remove("d-none"); // Exibe o link de "Sair"
+    // Obtém os valores do formulário
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const cnpj = document.getElementById('cnpj').value;
+    const cidade = document.getElementById('cidade').value;
+    const estado = document.getElementById('estado').value;
+    const senha = document.getElementById('senha').value;
+    const confirmeSenha = document.getElementById('confirmeSenha').value;
+
+    // Verifica se as senhas coincidem
+    if (senha !== confirmeSenha) {
+        alert('As senhas não coincidem!');
+        return;
     }
 
-    // Função para capturar os dados do formulário e validar o cadastro
-    document.getElementById("form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
+    // Cria o objeto da empresa
+    const novaEmpresa = {
+        nome: nome,
+        email: email,
+        cnpj: cnpj,
+        cidade: cidade,
+        estado: estado,
+        senha: senha
+    };
 
-        // Captura os valores dos campos do formulário
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("email").value;
-        const cnpj = document.getElementById("cnpj").value;
-        const cidade = document.getElementById("cidade").value;
-        const estado = document.getElementById("estado").value;
-        const senha = document.getElementById("senha").value;
-        const confirmeSenha = document.getElementById("confirmeSenha").value;
+    // Recupera o banco de dados de empresas ou cria um novo array
+    let dbEmpresas = JSON.parse(localStorage.getItem('dbEmpresas')) || [];
 
-        // Verifica se as senhas coincidem
-        if (senha !== confirmeSenha) {
-            alert("As senhas não coincidem. Tente novamente.");
-            return;
+    // Adiciona a nova empresa ao banco de dados
+    dbEmpresas.push(novaEmpresa);
+
+    // Salva o banco de dados atualizado no localStorage
+    localStorage.setItem('dbEmpresas', JSON.stringify(dbEmpresas));
+
+    // Exibe uma mensagem de sucesso e redireciona para a página inicial
+    alert('Cadastro realizado com sucesso!');
+    window.location.href = '../home-page/index.html';
+
+
+    function atualizarBotoes() {
+        const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+        // Elementos dos botões
+        const btnCadastro = document.getElementById('cadastro');
+        const btnEntrar = document.getElementById('entrar');
+        const btnCadastrarVaga = document.getElementById('cadastrarVaga');
+        const btnMeuPerfil = document.getElementById('meuPerfil');
+        const btnSair = document.getElementById('sair');
+
+        if (isLoggedIn) {
+            // Usuário logado: esconder "Cadastro" e "Entrar", mostrar "Meu Perfil", "Cadastrar Vaga" e "Sair"
+            btnCadastro.classList.add('d-none');
+            btnEntrar.classList.add('d-none');
+            btnCadastrarVaga.classList.remove('d-none');
+            btnMeuPerfil.classList.remove('d-none');
+            btnSair.classList.remove('d-none');
+        } else {
+            // Usuário não logado: mostrar "Cadastro" e "Entrar", esconder "Meu Perfil", "Cadastrar Vaga" e "Sair"
+            btnCadastro.classList.remove('d-none');
+            btnEntrar.classList.remove('d-none');
+            btnCadastrarVaga.classList.add('d-none');
+            btnMeuPerfil.classList.add('d-none');
+            btnSair.classList.add('d-none');
         }
+    }
 
-        // Verifica se todos os campos obrigatórios estão preenchidos
-        if (!nome || !email || !cnpj || !cidade || !estado || !senha || !confirmeSenha) {
-            alert("Por favor, preencha todos os campos obrigatórios.");
-            return;
-        }
+    // Ação para o botão "Sair"
+    document.getElementById('sair').addEventListener('click', function () {
+        // Removendo o estado de login do localStorage
+        localStorage.setItem('isLoggedIn', false);
 
-        // Armazena os dados do cadastro no localStorage
-        localStorage.setItem("usuarioCadastrado", true);
-        localStorage.setItem("emailCadastrado", email); // Armazena o email no localStorage
-        localStorage.setItem("senhaCadastrada", senha); // Armazena a senha no localStorage
+        // Atualiza a interface
+        atualizarBotoes();
 
-        // Exibe mensagem de sucesso
-        alert("Cadastro realizado com sucesso!");
+        alert('Você saiu com sucesso!');
 
-        // Exibe os links de "Cadastrar Vaga", "Meu Perfil" e "Sair", e esconde "Cadastro" e "Entrar"
-        document.getElementById("cadastrarVaga").classList.remove("d-none");
-        document.getElementById("meuPerfil").classList.remove("d-none");
-        document.getElementById("cadastro").classList.add("d-none");
-        document.getElementById("entrar").classList.add("d-none");
-        document.getElementById("sair").classList.remove("d-none"); // Exibe o botão "Sair"
-
-        // redirecionar o usuário após o cadastro
-        //window.location.href = "../pagina-perfil/perfil.html"; 
+        // Redireciona para a página inicial
+        window.location.href = '../home-page/index.html';
     });
 
-    // Função para o botão de "Sair"
-    document.getElementById("sair").addEventListener("click", function () {
-        // Remove as informações de cadastro do localStorage
-        localStorage.removeItem("usuarioCadastrado");
-        localStorage.removeItem("emailCadastrado");
-        localStorage.removeItem("senhaCadastrada");
-
-        // Recarrega a página para aplicar as mudanças
-        window.location.href = "../pagina-tipo-cadastro/tipo.html";
-    });
+    // Atualizar a interface ao carregar a página
+    window.onload = function () {
+        atualizarBotoes();
+    };
 });

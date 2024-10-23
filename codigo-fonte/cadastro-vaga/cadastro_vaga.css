@@ -1,4 +1,3 @@
-
 /*Inicio - Configuração Header*/
 * {
     padding: 0px;
@@ -10,34 +9,44 @@
     width: 100%;
     z-index: 1000;
     top: 0;
+    font-family: cursive;
+} 
 
+a:hover {
+    opacity: 0.7;
+  }
+
+#cadastro {
+    color: black;
+    background-color: white;
+}
+
+#entrar {
+    background-color: black;
+    color: white;
+}
+
+#meuPerfil {
+    background-color: black;
+    color: white;
 }
 
 .centro {
     margin: 0 auto;
     display: flex;
 }
+
 #linkMenu>a {
     margin-right: 20px;
     border-radius: 5px;
     padding: 5px;
-    font-size: 18px;
 }
+
 .container-fluid> :first-child {
     font-size: 25px;
-    font-weight: bold;
 
 }
-.container-fluid> :first-child:hover {
-    border-radius: 5px;
-    padding: 5px;
-}
-#linkMenu>a:hover {
 
-    font-size: 101%;
-    font-weight: bold;
-
-}
 /*Fim - Configuração Header*/
 
 
@@ -52,7 +61,7 @@
     margin: 100px auto;
     max-width: 400px;
     /* Define uma largura máxima para o formulário */
-   padding: 30px;
+    padding: 30px;
     /* Adiciona algum espaçamento interno */
     background-color: #ffffff;
     /* Fundo branco para o formulário */
@@ -61,18 +70,16 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     /* Sombra leve para destacar o formulário */
     border: 1px solid black;
-    text-align: center;
-    margin-top: 150px;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     margin-left: 10px;
     font-size: 40px;
     font-weight: bold;
 }
 
-.subTitulo{
+.subTitulo {
     text-align: center;
     margin-left: 10px;
     font-size: 15px;
@@ -81,22 +88,22 @@
     margin-bottom: 20px;
 }
 
-.caixa{
-    width:100%;
+.caixa {
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
-label{
+label {
     font-weight: bold;
 }
 
-input{
-    width: 100%;  
+input {
+    width: 100%;
     border: 1px solid black;
 }
 
-#btn{
+#btn {
     font-weight: bold;
 }
 
@@ -116,55 +123,60 @@ input{
     /* Bordas arredondadas no botão */
     cursor: pointer;
     /* Altera o cursor ao passar o mouse */
-    
-}
 
-.form-btn:hover {
-    background-color: #145c32;
-    /* Cor do botão ao passar o mouse (opcional) */
 }
 
 
 /*Inicio Configuração Footer*/
-.footer {
-
-    margin-right: 0px;
-    color: white;
-    /* Cor do texto do footer */
+footer {
     text-align: center;
-    /* Alinha o texto ao centro */
-    padding: 10px;
-    /* Espaçamento interno do footer */
-    height: 100%;
+    padding: 20px;
     width: 100%;
+    bottom: 0;
+    color: white;
+    font-family: cursive;
+}
+
+.header a{
+    letter-spacing: 3px !important;
+    margin-left: 32px !important;
+}
+
+footer p{
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
 
 @media screen and (max-width: 600px) {
 
-    .container-form{
-        max-width:350px;
+    .container-form {
+        max-width: 350px;
     }
 
-    .caixa{
-        width:100%;
+    .caixa {
+        width: 100%;
         height: 100%;
     }
 
-}
+    header a {
+        width: max-content;
 
-#navbarNavAltMarkup {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
+    }
 
-#linkMenu {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1; 
-}
+    #cadastro {
+        color: white;
+        background-color: transparent;
+    }
 
-#meuPerfil{
-    margin-left: auto;
+    #entrar {
+        background-color: transparent;
+        color: white;
+    }
+
+    #meuPerfil {
+        background-color: transparent;
+        color: white;
+    }
+
+
 }
