@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Verifica se o usuário já realizou o cadastro
     const cadastroFeito = localStorage.getItem("usuarioCadastrado");
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Função para capturar os dados do formulário e validar o cadastro
-    document.getElementById("form").addEventListener("submit", function(event) {
+    document.getElementById("form").addEventListener("submit", function (event) {
         event.preventDefault(); // Impede o envio padrão do formulário
 
         // Captura os valores dos campos do formulário
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Função para o botão de "Sair"
-    document.getElementById("sair").addEventListener("click", function() {
+    document.getElementById("sair").addEventListener("click", function () {
         // Remove as informações de cadastro do localStorage
         localStorage.removeItem("usuarioCadastrado");
         localStorage.removeItem("emailCadastrado");
