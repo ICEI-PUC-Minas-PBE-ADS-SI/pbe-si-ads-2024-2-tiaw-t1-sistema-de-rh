@@ -4,32 +4,40 @@
     margin: 0px;
 }
 
+a:hover{
+    opacity: 0.7;
+}
+
 .header {
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
-    font-family: cursive;
 } 
 
-a:hover {
-    opacity: 0.7;
-  }
-
+.header a{
+    letter-spacing: 3px ;
+    margin-left: 32px ;
+}
 
 #cadastro {
-    color: black;
-    background-color: white;
+    color: black !important;
+    background-color: white ;
 }
 
 #entrar {
-    background-color: black;
-    color: white;
+    background-color: black ;
+    color: white ;
 }
 
 #meuPerfil {
-    background-color: black;
-    color: white;
+    background-color: black ;
+    color: white ;
+}
+
+footer p{
+    letter-spacing: 3px;
+    margin-left: 32px;
 }
 
 .centro {
@@ -133,11 +141,10 @@ input {
 /*Inicio Configuração Footer*/
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 2px;
     width: 100%;
     bottom: 0;
     color: white;
-    font-family: cursive;
 }
 .header a{
     letter-spacing: 3px !important;

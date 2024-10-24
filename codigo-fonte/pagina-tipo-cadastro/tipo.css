@@ -9,31 +9,36 @@ html {
     height: 100%;
 }
 
+
+a:hover{
+    opacity: 0.7;
+}
+
 .header {
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
-    font-family: cursive;
 } 
 
-a:hover {
-    opacity: 0.7;
-  }
+.header a{
+    letter-spacing: 3px ;
+    margin-left: 32px ;
+}
 
 #cadastro {
-    color: black;
-    background-color: white;
+    color: black ;
+    background-color: white ;
 }
 
 #entrar {
-    background-color: black;
-    color: white;
+    background-color: black ;
+    color: white ;
 }
 
 #meuPerfil {
-    background-color: black;
-    color: white;
+    background-color: black ;
+    color: white ;
 }
 
 .centro {
@@ -99,10 +104,11 @@ a {
 /* Configuração do Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    color: white;
+    padding: 2px;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    color: white;
 }
 .header a{
     letter-spacing: 3px !important;
