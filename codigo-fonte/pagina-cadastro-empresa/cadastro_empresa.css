@@ -145,6 +145,7 @@ footer {
     width: 100%;
     bottom: 0;
     color: white;
+    position: fixed;
 }
 .header a{
     letter-spacing: 3px !important;

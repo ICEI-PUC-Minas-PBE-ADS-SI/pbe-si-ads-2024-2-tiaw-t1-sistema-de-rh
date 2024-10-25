@@ -93,7 +93,6 @@ footer p {
     grid-template-columns: 1fr 2fr;
     margin-top: 50px;
     margin-left: 90px;
-    margin-bottom: 50px;
     max-width: max-content;
 }
 
@@ -141,6 +140,7 @@ footer {
     width: 100%;
     bottom: 0;
     color: white;
+    position: fixed;
 }
 
 /* Responsividade */
