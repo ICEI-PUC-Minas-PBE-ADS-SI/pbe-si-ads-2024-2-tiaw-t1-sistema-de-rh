@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Lista de Vagas</title>
+    <title>Vagas Disponíveis</title>
     <link rel="stylesheet" href="vagas.css">
 </head>
 
@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-success">
             <div class="container-fluid">
-                <a class="navbar-brand ms-5 text-white" href="../home-page/index.html" id="logo">Contrate-Me</a>
+                <a class="navbar-brand ms-5 text-white" href="../home-page/index.html" id="logo">Me Contrate</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -26,70 +26,89 @@
                     <div class="navbar-nav ms-auto me-3" id="linkMenu">
                         <a class="nav-link text-white " href="../home-page/index.html">Início</a>
                         <a class="nav-link text-white " href="../pagina-vagas/vagas.html">Consultar Vagas</a>
-                        <!-- Links ocultados/mostrados dinamicamente -->
                         <a class="nav-link d-none text-white " id="cadastrarVaga"
                             href="../cadastro-vaga/cadastro_vaga.html">Cadastrar Vaga</a>
                         <a class="nav-link d-none bg-white text-dark" id="meuPerfil" href="#">Meu Perfil</a>
                         <a class="nav-link" id="cadastro" href="../pagina-tipo-cadastro/tipo.html">Cadastro</a>
                         <a class="nav-link" id="entrar" href="../pagina-login/login.html">Entrar</a>
-                        <!-- Botão de Sair -->
                         <a class="nav-link d-none bg-black text-white" id="sair" href="index.html">Sair</a>
                     </div>
-
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <aside class="filtros">
-            <h3>Filtros</h3>
-            <label><input type="checkbox"> Título 1</label><br>
-            <label><input type="checkbox"> Título 2</label><br>
-        </aside>
+    <main class="container mt-6">
+        <div class="row">
+            <aside class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                <h3>Filtros</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar vaga" aria-label="Buscar vaga"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
+                </div>
+                <label><input type="checkbox"> Me Interessei</label><br>
+            </aside>
 
-        <section class="vagas">
-            <div class="vaga">
-                <h2>Título</h2>
-                <p>Descrição</p>
-                <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais bg-success text-white">Saiba Mais</a>
-            </div>
-
-            <div class="vaga">
-                <h2>Título</h2>
-                <p>Descrição</p>
-                <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais bg-success text-white">Saiba Mais</a>
-            </div>
-
-            <div class="vaga">
-                <h2>Título</h2>
-                <p>Descrição</p>
-                <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais bg-success text-white">Saiba Mais</a>
-            </div>
-
-            <div class="vaga">
-                <h2>Título</h2>
-                <p>Descrição</p>
-                <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais bg-success text-white">Saiba Mais</a>
-            </div>
-
-            <div class="vaga">
-                <h2>Título</h2>
-                <p>Descrição</p>
-                <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais bg-success text-white">Saiba Mais</a>
-            </div>
-
-            <div class="vaga">
-                <h2>Título</h2>
-                <p>Descrição</p>
-                <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais bg-success text-white">Saiba Mais</a>
-            </div>
-        </section>
+            <section class="col-lg-9 col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="../imagens/vagas_fotos/vaga01.jpg" alt="Imagem Vaga Administração" class="img-vaga">
+                        <div class="vaga p-3 border rounded">
+                            <h2>Administração</h2>
+                            <p>Gerenciar atividades administrativas e operacionais.</p>
+                            <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais btn btn-success text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="../imagens/vagas_fotos/vaga02.jpg" alt="Imagem Vaga Marketing" class="img-vaga">
+                        <div class="vaga p-3 border rounded">
+                            <h2>Marketing</h2>
+                            <p>Desenvolver estratégias de marketing digital.</p>
+                            <a href="../pagina-detalhes-vagas/vaga02.html" class="saiba-mais btn btn-success text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="../imagens/vagas_fotos/vaga03.jpg" alt="Imagem Vaga TI" class="img-vaga">
+                        <div class="vaga p-3 border rounded">
+                            <h2>Tecnologia da Informação</h2>
+                            <p>Suporte técnico e desenvolvimento de sistemas.</p>
+                            <a href="../pagina-detalhes-vagas/vaga03.html" class="saiba-mais btn btn-success text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="../imagens/vagas_fotos/vaga04.jpg" alt="Imagem Vaga Recursos Humanos" class="img-vaga">
+                        <div class="vaga p-3 border rounded">
+                            <h2>Recursos Humanos</h2>
+                            <p>Gerenciar o capital humano da empresa.</p>
+                            <a href="../pagina-detalhes-vagas/vaga04.html" class="saiba-mais btn btn-success text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="../imagens/vagas_fotos/vaga05.jpg" alt="Imagem Vaga Vendas" class="img-vaga">
+                        <div class="vaga p-3 border rounded">
+                            <h2>Vendas</h2>
+                            <p>Responsável pelas estratégias de vendas e atendimento ao cliente.</p>
+                            <a href="../pagina-detalhes-vagas/vaga05.html" class="saiba-mais btn btn-success text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <img src="../imagens/vagas_fotos/vaga06.jpg" alt="Imagem Vaga Design" class="img-vaga">
+                        <div class="vaga p-3 border rounded">
+                            <h2>Design Gráfico</h2>
+                            <p>Criar identidades visuais e materiais gráficos.</p>
+                            <a href="../pagina-detalhes-vagas/vaga06.html" class="saiba-mais btn btn-success text-white">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="bg-success text-white">
+    <footer class="bg-success text-white text-center py-3 mt-4">
         <p>Copyright &#169 2024 Me Contrate | Todos os direitos reservados.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

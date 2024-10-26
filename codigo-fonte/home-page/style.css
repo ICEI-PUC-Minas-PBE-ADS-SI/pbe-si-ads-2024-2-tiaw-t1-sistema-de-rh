@@ -5,8 +5,22 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
 .main {
@@ -53,7 +67,7 @@ a:hover {
 }
 
 #cadastro {
-    color: black !important;
+    color: black;
     background-color: white;
 }
 
@@ -67,17 +81,12 @@ a:hover {
     color: white;
 }
 
-footer p {
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-
 .centro {
     margin: 0 auto;
     display: flex;
 }
 
-#linkMenu > a {
+#linkMenu>a {
     margin-right: 20px;
     border-radius: 5px;
     padding: 5px;
@@ -136,31 +145,64 @@ footer p {
 /* Configuração do footer */
 footer {
     text-align: center;
-    padding: 2px;
+    padding: 10px;
     width: 100%;
-    bottom: 0;
+    background-color: #28a745; /* Cor de fundo para o footer */
     color: white;
-    position: fixed;
+    margin-top: 50px;
+
 }
+
+footer p {
+    letter-spacing: 3px;
+    margin: 0;
+    width: 100%;
+}
+
 
 /* Responsividade */
 
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
 
-
-    body{
-        grid-template-columns: 1fr; /* Uma única coluna para mobile */
+    #meuPerfil {
+        background-color: transparent;
+        color: white !important;
     }
 
-    .conheca h1{
+    #cadastro {
+        color: white;
+        background-color: transparent;
+    }
+
+    #entrar {
+        color: white;
+        background-color: transparent;
+    }
+
+
+    body {
+        grid-template-columns: 1fr;
+        /* Uma única coluna para mobile */
+    }
+
+    .conheca h1 {
         width: 100%;
     }
 
-    .conheca{
+    .conheca {
         display: flex;
-        margin-left: 30px; 
+        margin-left: 30px;
         flex-direction: column;
     }
 
+    #sair {
+        background-color: transparent !important;
+        color: white !important;
+    }
+
+    #meuPerfil {
+        background-color: transparent !important;
+        color: white !important;
+    }
 }
