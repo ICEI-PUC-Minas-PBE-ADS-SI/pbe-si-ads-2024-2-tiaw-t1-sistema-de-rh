@@ -156,13 +156,13 @@ footer p {
     }
 
     #cadastro {
-        color: white;
+        color:  white;
         background-color: transparent;
     }
 
     #entrar {
         background-color: transparent;
-        color: white;
+        color:  white;
     }
 
     #meuPerfil {
@@ -172,7 +172,7 @@ footer p {
 
     #sair{
         background-color: transparent !important;
-        color: white !important;
+        color:  white !important;
     }
 
     #meuPerfil{
