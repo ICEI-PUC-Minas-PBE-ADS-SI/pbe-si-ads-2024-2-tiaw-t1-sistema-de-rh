@@ -37,7 +37,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     // Exibe uma mensagem de sucesso e redireciona para a página inicial
     alert('Cadastro realizado com sucesso!');
-    window.location.href = '../home-page/index.html';
+    window.location.href = '../pagina-login/login.html';
 
 
     function atualizarBotoes() {
