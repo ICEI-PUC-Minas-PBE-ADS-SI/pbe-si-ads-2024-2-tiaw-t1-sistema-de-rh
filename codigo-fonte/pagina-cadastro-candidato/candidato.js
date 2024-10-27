@@ -37,9 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mensagem de sucesso
         alert(`Cadastro realizado com sucesso!\nNome: ${nome}\nEmail: ${email}`);
-        
+
         // Limpa o formulário após o envio
         form.reset();
+        window.location.href = '../pagina-login/login.html';
     });
 
     // Função para validar o formato do email
