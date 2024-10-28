@@ -28,10 +28,10 @@
                         <a class="nav-link text-white " href="../pagina-vagas/vagas.html">Consultar Vagas</a>
                         <a class="nav-link d-none text-white " id="cadastrarVaga"
                             href="../cadastro-vaga/cadastro_vaga.html">Cadastrar Vaga</a>
-                        <a class="nav-link d-none bg-white text-dark" id="meuPerfil" href="#">Meu Perfil</a>
+                        <a class="nav-link d-none" id="meuPerfil" href="#">Meu Perfil</a>
                         <a class="nav-link" id="cadastro" href="../pagina-tipo-cadastro/tipo.html">Cadastro</a>
                         <a class="nav-link" id="entrar" href="../pagina-login/login.html">Entrar</a>
-                        <a class="nav-link d-none bg-black text-white" id="sair" href="../home-page/index.html">Sair</a>
+                        <a class="nav-link d-none" id="sair" href="../home-page/index.html">Sair</a>
                     </div>
                 </div>
             </div>
@@ -49,46 +49,97 @@
             </aside>
 
             <section class="vagas">
-                <div class="vaga">
+                <!-- Vaga 1: Administração -->
+                <div class="vaga" id="vaga01">
                     <img src="../imagens/vagas_fotos/vaga01.jpg" alt="Imagem Vaga Administração" class="img-vaga">
                     <h2>Administração</h2>
                     <p>Gerenciar atividades administrativas e operacionais.</p>
-                    <a href="../pagina-detalhes-vagas/vaga01.html" class="saiba-mais">Saiba Mais</a>
+                    <p id="info-vaga01" class="d-none">Empresa: ABC Corp</p>
+                    <p id="requisitos-vaga01" class="d-none">Experiência em gestão</p>
+                    <p id="salario-vaga01" class="d-none">R$ 3.000</p>
+                    <p id="contato-vaga01" class="d-none">contato@abccorp.com.br</p>
+                    <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
-                <div class="vaga">
+
+                <!-- Vaga 2: Marketing -->
+                <div class="vaga" id="vaga02">
                     <img src="../imagens/vagas_fotos/vaga02.jpg" alt="Imagem Vaga Marketing" class="img-vaga">
                     <h2>Marketing</h2>
                     <p>Desenvolver estratégias de marketing digital.</p>
-                    <a href="../pagina-detalhes-vagas/vaga02.html" class="saiba-mais">Saiba Mais</a>
+                    <p id="info-vaga02" class="d-none">Empresa: XYZ Marketing</p>
+                    <p id="requisitos-vaga02" class="d-none">Formação em Publicidade</p>
+                    <p id="salario-vaga02" class="d-none">R$ 4.000</p>
+                    <p id="contato-vaga02" class="d-none">hr@xyzmarketing.com.br</p>
+                    <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
-                <div class="vaga">
+
+                <!-- Vaga 3: Tecnologia da Informação -->
+                <div class="vaga" id="vaga03">
                     <img src="../imagens/vagas_fotos/vaga03.jpg" alt="Imagem Vaga TI" class="img-vaga">
                     <h2>Tecnologia da Informação</h2>
                     <p>Suporte técnico e desenvolvimento de sistemas.</p>
-                    <a href="../pagina-detalhes-vagas/vaga03.html" class="saiba-mais">Saiba Mais</a>
+                    <p id="info-vaga03" class="d-none">Empresa: TecSolutions</p>
+                    <p id="requisitos-vaga03" class="d-none">Conhecimento em programação</p>
+                    <p id="salario-vaga03" class="d-none">R$ 5.000</p>
+                    <p id="contato-vaga03" class="d-none">contato@tecsolutions.com.br</p>
+                    <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
-                <div class="vaga">
+
+                <!-- Vaga 4: Recursos Humanos -->
+                <div class="vaga" id="vaga04">
                     <img src="../imagens/vagas_fotos/vaga04.jpg" alt="Imagem Vaga Recursos Humanos" class="img-vaga">
                     <h2>Recursos Humanos</h2>
                     <p>Gerenciar o capital humano da empresa.</p>
-                    <a href="../pagina-detalhes-vagas/vaga04.html" class="saiba-mais">Saiba Mais</a>
+                    <p id="info-vaga04" class="d-none">Empresa: RH Brasil</p>
+                    <p id="requisitos-vaga04" class="d-none">Experiência em RH</p>
+                    <p id="salario-vaga04" class="d-none">R$ 4.500</p>
+                    <p id="contato-vaga04" class="d-none">contato@rhbrasil.com.br</p>
+                    <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
-                <div class="vaga">
+
+                <!-- Vaga 5: Vendas -->
+                <div class="vaga" id="vaga05">
                     <img src="../imagens/vagas_fotos/vaga05.jpg" alt="Imagem Vaga Vendas" class="img-vaga">
                     <h2>Vendas</h2>
                     <p>Responsável pelas estratégias de vendas e atendimento ao cliente.</p>
-                    <a href="../pagina-detalhes-vagas/vaga05.html" class="saiba-mais">Saiba Mais</a>
+                    <p id="info-vaga05" class="d-none">Empresa: KLABIN S.A</p>
+                    <p id="requisitos-vaga05" class="d-none">Cursando Superior em ADM</p>
+                    <p id="salario-vaga05" class="d-none">R$ 2.500</p>
+                    <p id="contato-vaga05" class="d-none">klabin@klabin.com.br</p>
+                    <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
-                <div class="vaga">
+
+                <!-- Vaga 6: Design Gráfico -->
+                <div class="vaga" id="vaga06">
                     <img src="../imagens/vagas_fotos/vaga06.jpg" alt="Imagem Vaga Design" class="img-vaga">
                     <h2>Design Gráfico</h2>
                     <p>Criar identidades visuais e materiais gráficos.</p>
-                    <a href="../pagina-detalhes-vagas/vaga06.html" class="saiba-mais">Saiba Mais</a>
+                    <p id="info-vaga06" class="d-none">Empresa: Criative Studio</p>
+                    <p id="requisitos-vaga06" class="d-none">Conhecimento em design gráfico</p>
+                    <p id="salario-vaga06" class="d-none">R$ 3.800</p>
+                    <p id="contato-vaga06" class="d-none">contato@criativestudio.com.br</p>
+                    <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
             </section>
         </div>
     </main>
     
+<!-- Modal para Detalhes da Vaga -->
+<div id="detalhesVagaModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="fecharModal()">&times;</span>
+        <img src="" alt="Imagem da Vaga" id="modalImg" class="img-fluid mb-3">
+        <h2 id="modalTitulo"></h2>
+        <p id="modalDescricao"></p>
+        <p id="modalInfo"></p>
+        <p id="modalRequisitos"></p>
+        <p id="modalSalario"></p>
+        <p id="modalContato"></p>
+        <button id="btnInteressar" class="interessar-btn" onclick="meInteressar()">Me Interessar</button>
+    </div>
+</div>
+
+
 
     <footer class="bg-success text-white text-center py-3 mt-4">
         <p>Copyright &#169 2024 Me Contrate | Todos os direitos reservados.</p>
