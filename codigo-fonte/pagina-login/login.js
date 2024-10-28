@@ -13,6 +13,16 @@ function autenticarLogin(email, senha) {
     }
 }
 
+// Verifica se existe um candidato com o email e a senha fornecidos
+    const CandidatoEncontrado = dbcandidatos.find(candidato => candidato.email === email && candidato.senha === senha);
+
+    if (CandidatoEncontrado) {
+        return true;  // Login válido
+    } else {
+        return false;  // Login inválido
+    }
+}
+
 // Função para atualizar o estado de login
 function realizarLogin() {
     // Pega os valores de email e senha fornecidos pelo formulário
