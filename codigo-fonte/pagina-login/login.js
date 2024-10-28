@@ -1,52 +1,56 @@
-// Função para autenticar o login
+// Função para autenticar o login de empresas
 function autenticarLogin(email, senha) {
-    // Busca no localStorage a lista de empresas
-    const dbEmpresas = JSON.parse(localStorage.getItem('dbEmpresas')) || [];
-
-    // Verifica se existe uma empresa com o email e a senha fornecidos
-    const empresaEncontrada = dbEmpresas.find(empresa => empresa.email === email && empresa.senha === senha);
-
-    if (empresaEncontrada) {
-        return true;  // Login válido
+    const dbEmpresas = JSON.parse(localStorage.getItem("dbEmpresas")) || [];
+  
+    const empresaEncontrada = dbEmpresas.find(
+      (empresa) => empresa.email === email && empresa.senha === senha
+    );
+  
+    return !!empresaEncontrada; // Retorna verdadeiro se a empresa foi encontrada
+  }
+  
+  // Função para autenticar o login de candidatos
+  function autenticarLoginCandi(email, senha) {
+    const dbCandidatos = JSON.parse(localStorage.getItem("dbCandidatos")) || [];
+  
+    const candidatoEncontrado = dbCandidatos.find(
+      (candidato) => candidato.email === email && candidato.senha === senha
+    );
+  
+    return !!candidatoEncontrado; // Retorna verdadeiro se o candidato foi encontrado
+  }
+  
+  // Função para realizar o login
+  function realizarLogin() {
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("password").value;
+  
+    // Verifica se o login é válido para empresas ou candidatos
+    const loginValidoEmpresa = autenticarLogin(email, senha);
+    const loginValidoCandi = autenticarLoginCandi(email, senha);
+  
+    if (loginValidoEmpresa) {
+      // Se o login for válido para empresa, salva o tipo de usuário e estado de login
+      localStorage.setItem("isLoggedIn", true);
+      localStorage.setItem("userType", "empresa"); // Define o tipo de usuário como "empresa"
+      alert("Login realizado com sucesso!");
+      window.location.href = "../home-page/index.html";
+    } else if (loginValidoCandi) {
+      // Se o login for válido para candidato, salva o tipo de usuário e estado de login
+      localStorage.setItem("isLoggedIn", true);
+      localStorage.setItem("userType", "candidato"); // Define o tipo de usuário como "candidato"
+      alert("Login realizado com sucesso!");
+      window.location.href = "../home-page/index.html";
     } else {
-        return false;  // Login inválido
+      alert("Email ou senha incorretos.");
     }
-}
-
-// Verifica se existe um candidato com o email e a senha fornecidos
-    const CandidatoEncontrado = dbcandidatos.find(candidato => candidato.email === email && candidato.senha === senha);
-
-    if (CandidatoEncontrado) {
-        return true;  // Login válido
-    } else {
-        return false;  // Login inválido
-    }
-}
-
-// Função para atualizar o estado de login
-function realizarLogin() {
-    // Pega os valores de email e senha fornecidos pelo formulário
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('password').value;
-
-    // Verifica se o login é válido
-    const loginValido = autenticarLogin(email, senha);
-
-    if (loginValido) {
-        // Se o login for válido, salva o estado de login no localStorage
-        localStorage.setItem('isLoggedIn', true);
-        alert('Login realizado com sucesso!');
-
-        // Redireciona o usuário para a Home-page
-        window.location.href = '../home-page/index.html';
-    } else {
-        // Se o login for inválido, exibe uma mensagem de erro
-        alert('Email ou senha incorretos.');
-    }
-}
-
-// Evento de submit no formulário de login
-document.getElementById('loginForm').addEventListener('submit', function (event) {
-    event.preventDefault();  // Evita o recarregamento da página
-    realizarLogin();  // Chama a função para realizar o login
-});
+  }
+  
+  
+  // Evento de submit no formulário de login
+  document
+    .getElementById("loginForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Evita o recarregamento da página
+      realizarLogin(); // Chama a função para realizar o login
+    });
