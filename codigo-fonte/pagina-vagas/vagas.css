@@ -112,6 +112,9 @@ main {
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
+    width: 305px; /* Largura fixa para os cartões */
+    min-width: 305px; /* Garante que não encolham */
 }
 
 .vaga h2 {
@@ -157,6 +160,7 @@ footer p {
 
     .vaga {
         margin-bottom: 1rem;
+        width: 100%;
     }
 
     img{
