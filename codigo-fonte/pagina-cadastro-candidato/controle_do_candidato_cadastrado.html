@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Lista dos Candidatos Cadastrados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Candidatos Cadastrados</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaCandidatos">
+                <!-- As informações dos candidatos serão aqui inseridas-->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Função para listar os candidatos cadastrados
+        function listarCandidatos() {
+            const dbCandidatos = JSON.parse(localStorage.getItem('dbCandidatos')) || [];
+            const tabelaCandidatos = document.getElementById('tabelaCandidatos');
+
+            // Limpa a tabela antes de inserir os dados
+            tabelaCandidatos.innerHTML = '';
+
+            // Itera sobre cada candidato e cria uma linha na tabela
+            dbCandidatos.forEach(candidato => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${candidato.nome}</td>
+                    <td>${candidato.email}</td>
+                `;
+                tabelaCandidatos.appendChild(tr);
+            });
+        }
+
+        // Chama a função ao carregar a página
+        window.onload = listarCandidatos;
+    </script>
+</body>
+
+</html>
