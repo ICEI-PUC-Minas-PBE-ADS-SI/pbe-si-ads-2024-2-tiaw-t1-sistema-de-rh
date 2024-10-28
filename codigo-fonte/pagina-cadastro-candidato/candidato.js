@@ -33,6 +33,26 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        //início da última modificação <--
+
+        // Cria o objeto do candidato
+    const novoCandidato = {
+        nome: nome,
+        email: email,
+        senha: senha
+    };
+
+        // Recupera o banco de dados dos candidatos ou cria um novo array
+    let dbCandidatos = JSON.parse(localStorage.getItem('dbCandidatos')) || [];
+
+    // Adiciona o nova candidato ao banco de dados
+    dbCandidatos.push(novoCandidato);
+
+    // Salva o banco de dados atualizado no localStorage
+    localStorage.setItem('dbCandidatos', JSON.stringify(dbCandidatos));
+
+        //Fim da última modificação <--
+
         // Aqui você pode adicionar lógica para enviar os dados ao servidor
 
         // Mensagem de sucesso
