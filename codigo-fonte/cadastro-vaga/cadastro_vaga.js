@@ -1,12 +1,14 @@
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
+
+
     let nome = document.getElementById("nome").value;
     let descricao = document.getElementById("descricao").value;
-    let cnpj = document.getElementById("cnpj").value;
-    let cidade = document.getElementById("cidade").value;
-    let estado = document.getElementById("estado").value;
-    let senha = document.getElementById("senha").value;
+    let empresa = document.getElementById("cnpj").value;
+    let requisitos = document.getElementById("cidade").value;
+    let salario = document.getElementById("estado").value;
+    let contato = document.getElementById("senha").value;
     let imagemUrl = document.getElementById("imagemUrl").value; // Obter URL da imagem
 
     let isValid = true;
@@ -21,12 +23,12 @@ document.getElementById("form").addEventListener("submit", function (event) {
         isValid = false;
     }
 
-    if (cnpj.length === 0) {
+    if (empresa.length === 0) {
         alert("Digite as informações da empresa.");
         isValid = false;
     }
 
-    if (senha.length < 6) {
+    if (requisitos.length < 6) {
         alert("O contato deve ter pelo menos 6 caracteres.");
         isValid = false;
     }
@@ -36,10 +38,10 @@ document.getElementById("form").addEventListener("submit", function (event) {
     const vaga = {
         nome,
         descricao,
-        cnpj,
-        cidade,
-        estado,
-        senha,
+        empresa,
+        requisitos,
+        salario,
+        contato,
         imagemUrl, // Adicionar URL da imagem ao objeto
     };
 
@@ -110,10 +112,11 @@ document.getElementById('sair').addEventListener('click', function () {
     alert('Você saiu com sucesso!');
     
     // Redireciona para a página inicial após logout
-    window.location.href = '../home-page/index.html';
+    window.location.href = 'index.html';
 });
+
 
 // Atualizar a interface ao carregar a página
 window.onload = function () {
     atualizarBotoes();
-};
+}
