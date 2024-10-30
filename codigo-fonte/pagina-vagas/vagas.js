@@ -1,4 +1,3 @@
-
 function atualizarBotoes() {
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
     const userType = localStorage.getItem('userType'); // Recupera o tipo de usuário
@@ -50,15 +49,55 @@ document.getElementById('sair').addEventListener('click', function () {
     window.location.href = '../home-page/index.html';
 });
 
-// Atualizar a interface ao carregar a página
-window.onload = function () {
-    atualizarBotoes();
-};
+// Função para alternar o interesse na vaga
+function alternarInteresse() {
+    const modal = document.getElementById('detalhesVagaModal');
+    const vagaId = modal.getAttribute('data-vaga-id'); // Obtém o ID da vaga
+    const vaga = document.querySelector(`#${vagaId}`);
+    const btnInteressar = document.getElementById('btnInteressar');
 
+    if (vaga.classList.contains('interested')) {
+        // Se já está interessado, remove o interesse
+        vaga.classList.remove('interested');
+        btnInteressar.innerText = "Me Interessar";
+        alert("Você retirou seu interesse na vaga!");
+    } else {
+        // Se não está interessado, adiciona o interesse
+        vaga.classList.add('interested');
+        btnInteressar.innerText = "Retirar Interesse";
+        alert("Você demonstrou interesse na vaga!");
+    }
+
+    fecharModal();
+    aplicarFiltro(); // Atualiza o filtro se estiver marcado "Me Interessei"
+}
+
+// Função para aplicar o filtro de busca e interesse
+function aplicarFiltro() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const interestedCheckbox = document.getElementById('interestedCheckbox').checked;
+    const vagas = document.querySelectorAll('.vaga');
+
+    vagas.forEach(vaga => {
+        const titulo = vaga.querySelector('h2').innerText.toLowerCase();
+        const descricao = vaga.querySelector('p').innerText.toLowerCase();
+        const isInterested = vaga.classList.contains('interested');
+
+        // Exibe ou oculta a vaga conforme os critérios de busca e filtro
+        if ((titulo.includes(searchInput) || descricao.includes(searchInput)) &&
+            (!interestedCheckbox || isInterested)) {
+            vaga.style.display = 'block';
+        } else {
+            vaga.style.display = 'none';
+        }
+    });
+}
 // Função para abrir o modal com os detalhes da vaga
 function abrirDetalhesVaga(element) {
-    const vaga = element.closest('.vaga'); // Obtenha o elemento da vaga
+    const vaga = element.closest('.vaga');
     const modal = document.getElementById('detalhesVagaModal');
+    modal.setAttribute('data-vaga-id', vaga.id); // Define o ID da vaga no modal
+
     const modalTitulo = document.getElementById('modalTitulo');
     const modalDescricao = document.getElementById('modalDescricao');
     const modalImg = document.getElementById('modalImg');
@@ -84,6 +123,9 @@ function abrirDetalhesVaga(element) {
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
     btnInteressar.style.display = isLoggedIn ? 'inline-block' : 'none';
 
+    // Altera o texto do botão "Me Interessar" conforme o estado atual
+    btnInteressar.innerText = vaga.classList.contains('interested') ? "Retirar Interesse" : "Me Interessar";
+
     // Exibe o modal
     modal.style.display = 'flex';
 }
@@ -93,8 +135,99 @@ function fecharModal() {
     document.getElementById('detalhesVagaModal').style.display = 'none';
 }
 
-// Função para simular o interesse na vaga
-function meInteressar() {
-    alert("Você demonstrou interesse na vaga!");
+
+
+// Adiciona eventos ao input de busca e ao checkbox de interesse
+document.getElementById('searchInput').addEventListener('input', aplicarFiltro);
+document.getElementById('interestedCheckbox').addEventListener('change', aplicarFiltro);
+
+
+// Função para carregar vagas do localStorage e exibir na página
+function carregarVagas() {
+    const vagasContainer = document.getElementById('vagasContainer');
+    vagasContainer.innerHTML = ''; // Limpa as vagas existentes
+
+    // Recupera as vagas salvas do localStorage
+    const vagas = JSON.parse(localStorage.getItem('vagas')) || []; 
+
+    // Cria elementos para cada vaga
+    vagas.forEach((vaga, index) => {
+        const vagaElement = document.createElement('div');
+        vagaElement.classList.add('vaga');
+        vagaElement.setAttribute('id', `vaga${index + 1}`);
+
+        vagaElement.innerHTML = `
+            <img src="${vaga.imagemUrl || '../imagens/vagas_fotos/default.jpg'}" alt="Imagem Vaga ${vaga.nome}" class="img-vaga">
+            <h2>${vaga.nome}</h2>
+            <p>${vaga.descricao}</p>
+            <p>Empresa: ${vaga.empresa}</p> <!-- Exibe o CNPJ como parte da informação da vaga -->
+            <p>Requisitos: ${vaga.requisitos}</p> <!-- Exibe a cidade -->
+            <p>Salario: ${vaga.salario}</p> <!-- Exibe o estado -->
+            <a href="#" class="saiba-mais" onclick='abrirDetalhesVagaCadastrada(${JSON.stringify(vaga)})'>Saiba Mais</a>
+        `;
+        
+        vagasContainer.appendChild(vagaElement);
+    });
 }
 
+
+// Função para abrir o modal com os detalhes da vaga
+function abrirDetalhesVaga(element) {
+    const vaga = element.closest('.vaga');
+    const modal = document.getElementById('detalhesVagaModal');
+    modal.setAttribute('data-vaga-id', vaga.id);
+
+    document.getElementById('modalImg').src = vaga.querySelector("img").src;
+    document.getElementById('modalTitulo').innerText = vaga.querySelector("h2").innerText;
+    document.getElementById('modalDescricao').innerText = vaga.querySelector("p").innerText;
+    document.getElementById('modalInfo').innerText = vaga.querySelector(`#info-${vaga.id}`).innerText;
+    document.getElementById('modalRequisitos').innerText = vaga.querySelector(`#requisitos-${vaga.id}`).innerText;
+    document.getElementById('modalSalario').innerText = vaga.querySelector(`#salario-${vaga.id}`).innerText;
+    document.getElementById('modalContato').innerText = vaga.querySelector(`#contato-${vaga.id}`).innerText;
+
+    modal.style.display = "flex"; // Exibe o modal
+}
+function abrirDetalhesVagaCadastrada(vaga) {
+    // Recupera as informações da vaga cadastrada
+    const titulo = vaga.nome;
+    const descricao = vaga.descricao;
+    const info = vaga.empresa; // Presumindo que "empresa" está sendo usada como info
+    const requisitos = vaga.requisitos;
+    const salario = vaga.salario;
+    const contato = vaga.contato;
+    const imgSrc = vaga.imagem || '../imagens/vagas_fotos/'; // Ajuste a imagem padrão
+
+    // Atualiza o conteúdo do modal
+    document.getElementById('modalTituloCadastrada').textContent = titulo;
+    document.getElementById('modalDescricaoCadastrada').textContent = descricao;
+    document.getElementById('modalInfoCadastrada').textContent = info;
+    document.getElementById('modalRequisitosCadastrada').textContent = requisitos;
+    document.getElementById('modalSalarioCadastrada').textContent = salario;
+    document.getElementById('modalContatoCadastrada').textContent = contato;
+    document.getElementById('modalImgCadastrada').src = imgSrc; // Atualiza a imagem no modal
+
+    // Exibe o modal
+    document.getElementById('detalhesVagaCadastradaModal').style.display = 'block';
+}
+function fecharModalCadastrada() {
+    document.getElementById('detalhesVagaCadastradaModal').style.display = 'none';
+}
+
+
+// Função para fechar o modal
+function fecharModal() {
+    document.getElementById('detalhesVagaModal').style.display = 'none';
+}
+
+// Carrega as vagas ao iniciar a página
+window.onload = function () {
+    carregarVagas(); // Carrega e exibe as vagas do localStorage
+    atualizarBotoes(); // Chama a função para atualizar os botões
+};
+
+
+function limparVagas() {
+    localStorage.removeItem('vagas'); // Remove as vagas do localStorage
+    carregarVagas(); // Atualiza a visualização das vagas
+    alert('Todas as vagas foram limpas.'); // Mensagem de confirmação
+}
