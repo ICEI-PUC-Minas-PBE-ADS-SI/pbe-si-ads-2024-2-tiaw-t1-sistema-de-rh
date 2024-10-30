@@ -43,9 +43,15 @@
             <aside class="filtros">
                 <h3>Filtros</h3>
                 <div class="search-container">
-                    <input type="text" placeholder="Buscar vaga" aria-label="Buscar vaga" id="search-input">
+                    <input type="text" placeholder="Buscar vaga" aria-label="Buscar vaga" id="searchInput">
+                    <button id="searchButton" onclick="aplicarFiltro()">Buscar</button>
                 </div>
-                <label><input type="checkbox"> Me Interessei</label>
+                <label><input type="checkbox" id="interestedCheckbox"> Me Interessei</label>
+                <br>
+                <div>
+                    <button id="limparVagas" class="btn btn-danger" onclick="limparVagas()">Limpar Vagas</button>
+                </div>
+            </aside>
             </aside>
 
             <section class="vagas">
@@ -120,24 +126,46 @@
                     <p id="contato-vaga06" class="d-none">contato@criativestudio.com.br</p>
                     <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
+                
+                <section id="vagasContainer"></section>
+
             </section>
+
         </div>
     </main>
-    
-<!-- Modal para Detalhes da Vaga -->
-<div id="detalhesVagaModal" class="modal">
+
+    <!-- Modal para Detalhes da Vaga -->
+    <div id="detalhesVagaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <img src="" alt="Imagem da Vaga" id="modalImg" class="img-fluid mb-3">
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescricao"></p>
+            <p id="modalInfo"></p>
+            <p id="modalRequisitos"></p>
+            <p id="modalSalario"></p>
+            <p id="modalContato"></p>
+            <button id="btnInteressar" class="interessar-btn" onclick="alternarInteresse()">Me Interessar</button>
+
+        </div>
+    </div>
+
+    <!-- Modal para Detalhes da Vaga Cadastrada -->
+<div id="detalhesVagaCadastradaModal" class="modal">
     <div class="modal-content">
-        <span class="close-btn" onclick="fecharModal()">&times;</span>
-        <img src="" alt="Imagem da Vaga" id="modalImg" class="img-fluid mb-3">
-        <h2 id="modalTitulo"></h2>
-        <p id="modalDescricao"></p>
-        <p id="modalInfo"></p>
-        <p id="modalRequisitos"></p>
-        <p id="modalSalario"></p>
-        <p id="modalContato"></p>
-        <button id="btnInteressar" class="interessar-btn" onclick="meInteressar()">Me Interessar</button>
+        <span class="close-btn" onclick="fecharModalCadastrada()">&times;</span>
+        <img src="" alt="Imagem da Vaga Cadastrada" id="modalImgCadastrada" class="img-fluid mb-3">
+        <h2 id="modalTituloCadastrada"></h2>
+        <p id="modalDescricaoCadastrada"></p>
+        <p id="modalInfoCadastrada"></p>
+        <p id="modalRequisitosCadastrada"></p>
+        <p id="modalSalarioCadastrada"></p>
+        <p id="modalContatoCadastrada"></p>
+        <button id="btnInteressar" class="interessar-btn" onclick="alternarInteresse()">Me Interessar</button>
+
     </div>
 </div>
+
 
 
 
