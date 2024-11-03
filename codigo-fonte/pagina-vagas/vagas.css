@@ -109,12 +109,10 @@ a:hover {
     transition: transform 0.2s ease;
 }
 
-.vagaC{
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease;
+.vaga {
+    border: 1px solid #ccc; /* Opcional: para visualizar as vagas */
+    padding: 10px; /* Espaçamento interno opcional */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 .vaga:hover {
@@ -230,6 +228,8 @@ footer p {
     letter-spacing: 3px;
     margin: 0;
 }
+
+
 
 /* Media queries para responsividade */
 @media screen and (max-width: 768px) {

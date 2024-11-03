@@ -51,6 +51,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
     alert("Vaga cadastrada com sucesso!");
     document.getElementById("form").reset();
+    window.location.href = '../pagina-vagas/vagas.html';
 });
 
 // Interação para alterar a cor do botão ao passar o mouse
@@ -112,7 +113,7 @@ document.getElementById('sair').addEventListener('click', function () {
     alert('Você saiu com sucesso!');
     
     // Redireciona para a página inicial após logout
-    window.location.href = 'index.html';
+    window.location.href = '../home-page/index.html';
 });
 
 

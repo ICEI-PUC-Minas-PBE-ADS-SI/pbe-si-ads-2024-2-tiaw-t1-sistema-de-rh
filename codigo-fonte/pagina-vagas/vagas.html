@@ -24,14 +24,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto me-3" id="linkMenu">
-                        <a class="nav-link text-white " href="../home-page/index.html">Início</a>
-                        <a class="nav-link text-white " href="../pagina-vagas/vagas.html">Consultar Vagas</a>
-                        <a class="nav-link d-none text-white " id="cadastrarVaga"
+                        <a class="nav-link text-white" href="../home-page/index.html">Início</a>
+                        <a class="nav-link text-white" href="../pagina-vagas/vagas.html">Consultar Vagas</a>
+                        <a class="nav-link text-white" href="../pagina-candidatos/candidatos.html">Consultar
+                            Candidatos</a>
+                        <a class="nav-link d-none text-white" id="cadastrarVaga"
                             href="../cadastro-vaga/cadastro_vaga.html">Cadastrar Vaga</a>
-                        <a class="nav-link d-none" id="meuPerfil" href="#">Meu Perfil</a>
+                        <a class="nav-link d-none bg-white text-dark" id="meuPerfil" href="#">Meu Perfil</a>
                         <a class="nav-link" id="cadastro" href="../pagina-tipo-cadastro/tipo.html">Cadastro</a>
                         <a class="nav-link" id="entrar" href="../pagina-login/login.html">Entrar</a>
-                        <a class="nav-link d-none" id="sair" href="../home-page/index.html">Sair</a>
+                        <a class="nav-link d-none bg-black text-white" id="sair">Sair</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +53,6 @@
                 <div>
                     <button id="limparVagas" class="btn btn-danger" onclick="limparVagas()">Limpar Vagas</button>
                 </div>
-            </aside>
             </aside>
 
             <section class="vagas">
@@ -126,9 +127,11 @@
                     <p id="contato-vaga06" class="d-none">contato@criativestudio.com.br</p>
                     <a href="#" class="saiba-mais" onclick="abrirDetalhesVaga(this)">Saiba Mais</a>
                 </div>
-                
-                <section id="vagasContainer"></section>
 
+                
+                <section id="vagasContainer">
+
+                </section>
             </section>
 
         </div>
@@ -145,29 +148,9 @@
             <p id="modalRequisitos"></p>
             <p id="modalSalario"></p>
             <p id="modalContato"></p>
-            <button id="btnInteressar" class="interessar-btn" onclick="alternarInteresse()">Me Interessar</button>
-
+            <button id="btnInteressar" class="interessar-btn" onclick="alternarInteresse()">Alterar Interesse</button>
         </div>
     </div>
-
-    <!-- Modal para Detalhes da Vaga Cadastrada -->
-<div id="detalhesVagaCadastradaModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="fecharModalCadastrada()">&times;</span>
-        <img src="" alt="Imagem da Vaga Cadastrada" id="modalImgCadastrada" class="img-fluid mb-3">
-        <h2 id="modalTituloCadastrada"></h2>
-        <p id="modalDescricaoCadastrada"></p>
-        <p id="modalInfoCadastrada"></p>
-        <p id="modalRequisitosCadastrada"></p>
-        <p id="modalSalarioCadastrada"></p>
-        <p id="modalContatoCadastrada"></p>
-        <button id="btnInteressar" class="interessar-btn" onclick="alternarInteresse()">Me Interessar</button>
-
-    </div>
-</div>
-
-
-
 
     <footer class="bg-success text-white text-center py-3 mt-4">
         <p>Copyright &#169 2024 Me Contrate | Todos os direitos reservados.</p>

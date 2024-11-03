@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Faz o main ocupar o espaço disponível */
+    margin-top: 2%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.header a {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+#cadastro {
+    color: black;
+    background-color: white;
+}
+
+#entrar {
+    background-color: black;
+    color: white;
+}
+
+#meuPerfil {
+    background-color: white;
+    color: black;
+}
+
+.centro {
+    margin: 0 auto;
+    display: flex;
+}
+
+#sair{
+    background-color: black;
+    color: white;
+}
+
+#linkMenu > a {
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+img {
+    width: 100%; /* Imagens se adaptam à largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.header a{
+    letter-spacing: 3px !important;
+    margin-left: 32px !important;
+}
+
+/* Estilo personalizado para a barra de pesquisa */
+.input-group {
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.input-group .form-control {
+    height: 50px;
+    padding: 10px 20px;
+    border: 2px solid #28a745;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group .form-control:focus {
+    border-color: #218838;
+    box-shadow: 0px 4px 12px rgba(40, 167, 69, 0.5);
+}
+
+.input-group-text {
+    background-color: #28a745;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group-text:hover {
+    background-color: #218838;
+}
+
+.input-group .fas.fa-search {
+    font-size: 18px;
+}
+
+.input-group .form-control::placeholder {
+    color: #a9a9a9;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px; /* Ajuste o padding se necessário */
+    width: 100%;
+    color: white;
+    background-color: #28a745; /* Exemplo de cor de fundo para o footer */
+}
+
+footer p {
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+    .contai {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    .filtros {
+        width: 100%; /* Largura total para o aside */
+        margin-right: 0; /* Remove a margem à direita */
+    }
+
+    .vagas {
+        grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+    }
+
+    #cadastro {
+        color: none;
+        background-color: white;
+    }
+    
+    #entrar {
+        background-color: none;
+        color: white;
+    }
+    
+    #meuPerfil {
+        background-color: none;
+    }
+
+    main{
+        margin-top: 5%;
+    }
+}

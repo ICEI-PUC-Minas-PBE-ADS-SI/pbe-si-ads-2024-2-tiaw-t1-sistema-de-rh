@@ -38,8 +38,12 @@ a:hover{
 }
 
 #meuPerfil {
-    background-color: black ;
-    color: white ;
+    background-color: white ;
+    color: black ;
+}
+
+#sair{
+    background-color: black;
 }
 
 .header a{

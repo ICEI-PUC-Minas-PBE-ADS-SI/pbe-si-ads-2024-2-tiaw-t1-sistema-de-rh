@@ -1,20 +1,29 @@
-// Aguarda o carregamento completo do DOM
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('form');
 
-    // Adiciona um evento de submit ao formulário
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
+        event.preventDefault();
 
-        // Obtém os valores dos campos
         const nome = document.getElementById('nome').value.trim();
+        const vaga = document.getElementById('vaga').value.trim();
+        const escolaridade = document.getElementById('escolaridade').value.trim();
         const email = document.getElementById('email').value.trim();
         const senha = document.getElementById('senha').value;
         const confirmeSenha = document.getElementById('confirmeSenha').value;
+        const genero = document.getElementById('genero').value; // Captura o gênero
 
-        // Validação dos campos
         if (nome.length < 4) {
             alert("O nome deve ter pelo menos 4 caracteres.");
+            return;
+        }
+
+        if (vaga.length < 4) {
+            alert("A vaga procurada deve ter pelo menos 4 caracteres.");
+            return;
+        }
+
+        if (escolaridade.length < 4) {
+            alert("A escolaridade deve ter pelo menos 4 caracteres.");
             return;
         }
 
@@ -33,39 +42,27 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        //início da última modificação <--
+        const novoCandidato = {
+            nome: nome,
+            vaga: vaga,
+            escolaridade: escolaridade,
+            email: email,
+            senha: senha,
+            genero: genero // Adiciona o gênero ao objeto do candidato
+        };
 
-        // Cria o objeto do candidato
-    const novoCandidato = {
-        nome: nome,
-        email: email,
-        senha: senha
-    };
+        let dbCandidatos = JSON.parse(localStorage.getItem('dbCandidatos')) || [];
+        dbCandidatos.push(novoCandidato);
+        localStorage.setItem('dbCandidatos', JSON.stringify(dbCandidatos));
 
-        // Recupera o banco de dados dos candidatos ou cria um novo array
-    let dbCandidatos = JSON.parse(localStorage.getItem('dbCandidatos')) || [];
-
-    // Adiciona o nova candidato ao banco de dados
-    dbCandidatos.push(novoCandidato);
-
-    // Salva o banco de dados atualizado no localStorage
-    localStorage.setItem('dbCandidatos', JSON.stringify(dbCandidatos));
-
-        //Fim da última modificação <--
-
-        // Aqui você pode adicionar lógica para enviar os dados ao servidor
-
-        // Mensagem de sucesso
-        alert(`Cadastro realizado com sucesso!\nNome: ${nome}\nEmail: ${email}`);
-
-        // Limpa o formulário após o envio
+        alert(`Cadastro realizado com sucesso!\nNome: ${nome}\nEmail: ${email}\nVaga: ${vaga}\nEscolaridade: ${escolaridade}\nGênero: ${genero}`);
         form.reset();
         window.location.href = '../pagina-login/login.html';
     });
 
-    // Função para validar o formato do email
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
     }
 });
+
