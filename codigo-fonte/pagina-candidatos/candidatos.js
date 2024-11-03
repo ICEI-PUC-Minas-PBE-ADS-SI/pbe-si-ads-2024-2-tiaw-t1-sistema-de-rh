@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 imagem: 'https://cdn-icons-png.flaticon.com/512/1207/1207984.png'
             },
             {
-                nome: 'Carlos Souza',
-                vaga: 'Analista de Sistemas',
-                escolaridade: 'Pós-graduação em Engenharia de Software',
-                contato: 'carlos.souza@email.com',
+                nome: 'Pedro Almeida',
+                vaga: 'Gerente de Projetos',
+                escolaridade: 'MBA em Gestão de Projetos',
+                contato: 'pedro.almeida@email.com',
                 imagem: 'https://cdn-icons-png.flaticon.com/512/6998/6998118.png'
             },
             {
@@ -32,13 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 contato: 'ana.costa@email.com',
                 imagem: 'https://cdn-icons-png.flaticon.com/512/1207/1207984.png'
             },
-            {
-                nome: 'Pedro Almeida',
-                vaga: 'Gerente de Projetos',
-                escolaridade: 'MBA em Gestão de Projetos',
-                contato: 'pedro.almeida@email.com',
-                imagem: 'https://cdn-icons-png.flaticon.com/512/6998/6998118.png'
-            }
         ];
 
         candidatosFicticios.forEach(candidato => {
