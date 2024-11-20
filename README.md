@@ -2,7 +2,8 @@
 
 A aplicação web de sistema de RH possui como objetivo ajudar as pessoas a encontrarem diferentes tipos de vagas de emprego. Ademais, também ajudamos as empresas a divulgarem essas vagas.
 
-Desenvolvimento de aplicação web front-end [clique aqui para acessar a aplicação](https://icei-puc-minas-pbe-ads-si.github.io/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/codigo-fonte/home-page/index.html)
+Desenvolvimento de aplicação web front-end.
+Para acessar a aplicação [clique aqui](https://icei-puc-minas-pbe-ads-si.github.io/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/codigo-fonte/home-page/index.html)
 
 2º semestre/2024
 
