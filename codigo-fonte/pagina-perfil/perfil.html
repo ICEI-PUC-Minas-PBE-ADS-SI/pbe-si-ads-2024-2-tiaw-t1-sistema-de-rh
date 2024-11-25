@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfil da Usuária</title>
+    <link rel="stylesheet" href="telaperfil.css">
+
 </head>
-
 <body>
-    <h3>Responsabilidade do Julio. Desenvolver essa tela de PERFIL DO USUARIO</h3>
+    <header>
+        <div class="navbar">
+            <h1>Me Contrate</h1>
+            <nav>
+                <a href="#" id="consultarvagas">Consultar Vagas</a>
+                <a href="#" id="cadastrarvagas">Cadastrar Vagas</a>
+                <button id="perfilBtn">Meu Perfil</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="perfil-container">
+            <div class="perfil-header">
+                <div class="avatar"></div>
+                <h2></h2>
+            </div>
+            <form id="perfilForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="escolaridade">Escolaridade:</label>
+                    <input type="text" id="escolaridade" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="vaga">Vaga de Interesse:</label>
+                    <input type="text" id="vaga" disabled>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Me Contrate. Todos os direitos reservados.</p>
+    </footer>
+    <script src="telaperfil.js"></script>
 </body>
-
 </html>
