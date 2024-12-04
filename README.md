@@ -12,7 +12,6 @@ Para acessar a aplicação [clique aqui](https://icei-puc-minas-pbe-ads-si.githu
 
 * Daniel Almeida Esppindola
 * Jhonata Oscar do Carmo Dias
-* Júlio Cesar Matos
 * Kaio Eduardo Gomes
 * Lucas Henrique de Jesus Souza
 * Otavio Nascimento de Castro
