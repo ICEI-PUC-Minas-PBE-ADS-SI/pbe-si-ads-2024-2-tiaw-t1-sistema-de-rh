@@ -1,31 +1,24 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Me Contrate
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Esppindola
+    given-names: Daniel Almeida
+  - family-names: do Carmo Dias
+    given-names: Jhonata Oscar
+  - family-names: Gomes
+    given-names: Kaio Eduardo
+  - family-names: de Jesus Souza
+    given-names: Lucas Henrique
+  - family-names: Nascimento de Castro
+    given-names: Otavio
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Lemos Tavares
+    given-names: Clóvis
 keywords:
-  - 
-  - 
-repository-code: 
+  - Sistema de RH
+repository-code: https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
