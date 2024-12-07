@@ -1,4 +1,4 @@
-# Template Padrão do Site "Me Contrate"
+# 9. Template Padrão do Site "Me Contrate"
 
 ## Estrutura do Projeto
 O site é composto pelas seguintes seções principais:

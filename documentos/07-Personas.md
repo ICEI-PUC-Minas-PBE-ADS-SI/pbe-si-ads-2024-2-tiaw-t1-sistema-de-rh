@@ -1,4 +1,4 @@
-# OBJETOS E LUGARES
+# 7. OBJETOS E LUGARES
 Quais objetos físicos e digitais essa pessoa usa? Quando, onde e como ela os usa?
 
 **Persona 1:**

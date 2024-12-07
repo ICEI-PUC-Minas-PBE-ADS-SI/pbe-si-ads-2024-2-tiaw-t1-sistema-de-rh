@@ -1,4 +1,4 @@
-# Mapa das Propostas de Valor (Perfil do Cliente)
+# 8. Mapa das Propostas de Valor (Perfil do Cliente)
 ![image](https://github.com/user-attachments/assets/50f5eb6d-3e3e-45f4-a810-dadfc3c73c4c)
 
 ## Perfil do Cliente
