@@ -4,8 +4,6 @@ A aplicação web de sistema de RH possui como objetivo ajudar as pessoas a enco
 
 Desenvolvimento de aplicação web front-end.
 
-Para acessar a aplicação [clique aqui](https://icei-puc-minas-pbe-ads-si.github.io/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/codigo-fonte/home-page/index.html)
-
 2º semestre/2024
 
 ## Alunos integrantes da equipe
@@ -20,20 +18,34 @@ Para acessar a aplicação [clique aqui](https://icei-puc-minas-pbe-ads-si.githu
 
 * Clóvis Lemos Tavares
 
+## Documentação
 
+1. [Documentação de Contexto](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/01-Documentação_Contexto.md)  
+2. [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/02-Especificação%20do%20Projeto.md)  
+3. [Metodologia](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/03-Metodologia.md)  
+4. [Projeto de Interface](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/04-Projeto%20de%20Interface.md)  
+5. [Entrevistas](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/05-Entrevistas.md)  
+6. [Matriz CSD e Mapa Stakeholders](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/06-Matriz%20CSD%20e%20Mapa%20de%20Stakeholders.md)  
+7. [Personas](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/07-Personas.md)  
+8. [Proposta de Valor](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/08-Proposta%20de%20Valor.md)  
+9. [Template Padrão](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/09-Template%20padrão%20do%20Site.md)
+10. [Bibliografia](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/blob/master/documentos/10-Bibliografia.md)  
 
-## Instruções de utilização 
+---
 
-> **IMPORTANTE: APAGUE ESSA SEÇÃO DE INSTRUÇÕES ANTES DE ENTREGAR SEU TRABALHO**
+## Hospedagem
 
-No desenvolvimento desse trabalho, o grupo deverá utilizar esse repositório como local para entrega de todos os artefatos a serem produzidos. Em especial, o grupo deverá providenciar a alteração dos seguintes arquivos:
+A aplicação em HTML/CSS/JS é um projeto que pode ser utilizado tanto em servidores como em navegadores web.  
+[Clique aqui para acessá-lo.](https://icei-puc-minas-pbe-ads-si.github.io/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/codigo-fonte/home-page/index.html)
 
-* **Capa do projeto** (Esse arquivo aqui): Informação básica sobre o projeto, alunos do grupo e professores responsáveis;
-* **Arquivo CITATION.cff**: descritor do projeto, utilizado para geração do certificado ao final da disciplina.
-* **Pasta código**: todos os arquivos resultantes da programação do software.
-* **Pasta docs --> arquivo README.md**: Documentação completa do projeto.
+---
 
-Toda a documentação do projeto é realizado por meio do Markdown, uma linguagem de formatação adotada pelo GitHub e por diversas outras plataformas. Aprenda Markdown e use-o para documentar o projeto:
+## Código-Fonte
 
-* [Sintaxe básica de gravação e formatação no GitHub - GitHub Docs](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [Markdown® Básico: Sintaxe, Uso &amp; Exemplos [Passo a Passo]](https://markdown.net.br/sintaxe-basica/)
+- [Código Fonte](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/tree/master/codigo-fonte)
+
+---
+
+## Apresentação
+
+- [Apresentação da solução](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/pbe-si-ads-2024-2-tiaw-t1-sistema-de-rh/tree/master/apresentação)
