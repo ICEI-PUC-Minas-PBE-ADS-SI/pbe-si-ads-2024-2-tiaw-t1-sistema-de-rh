@@ -1,6 +1,6 @@
 # Me Contrate
 
-Bem-vindo à apresentação "Me Contrate". Esta plataforma foi desenvolvida para [breve descrição da plataforma].
+Bem-vindo à apresentação "Me Contrate".
 
 ## Apresentação
 
