@@ -1,6 +1,6 @@
-# Sistema de RH
+# Me Contrate
 
-A aplicação web de sistema de RH possui como objetivo ajudar as pessoas a encontrarem diferentes tipos de vagas de emprego. Ademais, também ajudamos as empresas a divulgarem essas vagas.
+A aplicação web Me Contrate possui como objetivo ajudar as pessoas a encontrarem diferentes tipos de vagas de emprego. Ademais, também ajudamos as empresas a divulgarem essas vagas.
 
 Desenvolvimento de aplicação web front-end.
 
